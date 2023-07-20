@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url(https://db.onlinewebfonts.com/c/71b00e98168f1a2da1b6c5748587e433?family=Segoe+UI+Mono+W10+Regular);
+
+@font-face {
+    font-family: 'vs-code';
+    src: url(./font/CONSOLA.TTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: #444;
+}
+
+body {
+    background: #252525;
+}
+
+.head_portion1 {
+    height: 40px;
+    width: 100vw;
+    background: #222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: fixed;
+
+}
+
+
+/* --------------------------------sem styling------------------------- */
+.head_portion2 {
+    height: 30px;
+    width: 100vw;
+    background: #444;
+    position: fixed;
+    top: 40px;
+}
+
+.head_portion2 a {
+    color: rgb(218, 218, 218);
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.sem_active {
+    border-bottom: 1px solid white;
+}
+
+
+.side_icons {
+    width: 3.5vw;
+    height: 100vh;
+    background: #222;
+    position: fixed;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+
+}
+
+.side_icons i {
+    font-size: 25px;
+    padding: 10px 0;
+    color: white;
+}
+
+.side_icon_img img {
+    height: 40px;
+    padding: 10px 0;
+
+}
+
+.active_icon {
+    border-left: 2px solid rgb(0, 132, 255);
+}
+
+
+
+
+
+
+
+
+
+/*-------------------------------- subject names  and programs-------------------------------------- */
+.pgm_number {
+    position: fixed;
+    top: 70px;
+    left: 3.5vw;
+    background: #181717;
+    width: 20vw;
+    height: 100vh;
+
+}
+
+.explorer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 10px;
+    background: #141414;
+}
+
+.explorer_dots {
+    font-size: 30px;
+    margin-top: -27px;
+}
+
+.vs_code {
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+
+.vs_code i {
+    margin: 0 10px;
+}
+
+.subject_name {
+    margin-left: 25px;
+    color: white;
+    font-size: 14px;
+    font-family: 'vs-code';
+
+}
+
+.subject_name p {
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+
+.subject_name p img {
+    width: 13px;
+}
+
+.sub_heading {
+    background: #444;
+}
+
+
+
+
+
+/* ------------------------------textarea styling --------------------------------- */
+.textarea_container {
+    display: flex;
+    margin-left: 23.5vw;
+    background: 252525;
+    margin-top: 70px;
+    position: fixed;
+    width: 75.5vw;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.copy_btn {
+    height: 30px;
+    width: 100%;
+    background: #181717;
+    position: absolute;
+    display: flex;
+}
+
+.copy_icon {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    cursor: pointer;
+    margin-top: 5px;
+
+}
+
+.copied {
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.pgm_num {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background: #222;
+    width: 120px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(0, 132, 255);
+}
+
+.pgm_num p {
+    margin-left: 20px;
+    transform: rotate(90deg);
+    cursor: pointer;
+
+}
+
+.line_numbers {
+    counter-reset: line;
+    padding: 5px 10px;
+    font-family: monospace;
+    text-align: right;
+    user-select: none;
+    border: none;
+    background: #252525;
+    width: 4vw;
+    text-align: center;
+    color: #6b6b6b;
+    font-size: 15px;
+    margin-top: 30px;
+
+
+}
+
+.line_numbers p {
+    counter-reset: line;
+    padding: 5px 10px;
+    font-family: monospace;
+    text-align: right;
+    user-select: none;
+    border-right: 1px solid #ccc;
+    background: #252525;
+    width: 4vw;
+    text-align: center;
+    color: #6b6b6b;
+    font-size: 15px;
+}
+
+.line_numbers::before {
+    /* content: counter(line); */
+    counter-increment: line;
+
+}
+
+.text_area {
+    flex: 1;
+    padding: 5px 10px;
+    font-family: monospace;
+    resize: none;
+    overflow: auto;
+    outline: none;
+    background: #252525;
+    color: white;
+    font-size: 15px;
+    line-height: 25px;
+    min-height: 100vh;
+    margin: 0;
+    margin-top: 30px;
+
+}
+
+
+
+/* -------------footer styling---------------------- */
+.bottom_footer {
+    height: 20px;
+    width: 100vw;
+    background: #333;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    font-size: 13px;
+}
+
+.bottom_footer img {
+    height: 20px;
+}
+
+.copyright {
+    color: white;
+    position: absolute;
+    right: 30px;
+}

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesom icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="head_portion1">
+        index.html - vs_code - Visual Studio Code
+    </div>
+    <div class="head_portion2">
+        <a href="">Sem3</a>
+        <a href="">Sem4</a>
+        <a href="">Sem5</a>
+        <a href="">Sem6</a>
+        <a href="" class="sem_active">Sem7</a>
+        <a href="">Sem8</a>
+
+    </div>
+
+    <div class="side_icons">
+        <div class="side_icon_img active_icon">
+            <img src="./icons/copy.png" alt="">
+        </div>
+        <div class="side_icon_img">
+            <img src="./icons/search.png" alt="">
+        </div>
+
+        <div class="side_icon_img">
+            <img src="./icons/gitcontrol.png" alt="">
+        </div>
+        <div class="side_icon_img">
+            <img src="./icons/debug.png" alt="">
+        </div>
+        <div class="side_icon_img">
+            <img src="./icons/extension.png" alt="">
+        </div>
+    </div>
+
+    <div class="pgm_number">
+        <div class="explorer">
+            <p>EXPLORER</p>
+            <p class="explorer_dots">...</p>
+        </div>
+        <div class="vs_code">
+            <i class='fas fa-chevron-down'></i> VS_CODE
+
+
+        </div>
+
+        <div class="subject_name">
+            <div class="sub_heading">
+                <i class='fas fa-chevron-down'></i> Subject
+            </div>
+            <p onclick="switchProgram('program_container1')"> <img src="./icons/c_.png" alt=""> program1.c</p>
+            <p onclick="switchProgram('program_container2')"> <img src="./icons/js.png" alt=""> program2.js</p>
+            <p onclick="switchProgram('program_container3')"> <img src="./icons/java.png" alt=""> program3.java</p>
+            <p onclick="switchProgram('program_container4')"> <img src="./icons/java.png" alt=""> program4.java</p>
+            <p onclick="switchProgram('program_container5')"> <img src="./icons/java.png" alt=""> program5.java</p>
+            <p onclick="switchProgram('program_container6')"> <img src="./icons/java.png" alt=""> program6.java</p>
+            <p onclick="switchProgram('program_container7')"> <img src="./icons/java.png" alt=""> program7.java</p>
+            <p onclick="switchProgram('program_container8')"> <img src="./icons/java.png" alt=""> program8.java</p>
+            <p onclick="switchProgram('program_container9')"> <img src="./icons/java.png" alt=""> program9.java</p>
+            <p onclick="switchProgram('program_container10')"> <img src="./icons/java.png" alt=""> program10.java</p>
+
+        </div>
+
+        <div class="subject_name">
+            <div class="sub_head">
+                <i class='fas fa-chevron-right'></i> Subject
+            </div>
+        </div>
+
+        <div class="name_container"></div>
+
+    </div>
+
+
+    <!-- program section  -->
+    <!-- program 1  -->
+    <div id="program_container1" class="textarea_container">
+
+        <div class="line_numbers">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+            <p>11</p>
+            <p>12</p>
+            <p>13</p>
+            <p>14</p>
+            <p>15</p>
+            <p>16</p>
+            <p>17</p>
+            <p>18</p>
+            <p>19</p>
+            <p>20</p>
+            <p>21</p>
+            <p>22</p>
+
+        </div>
+        <div class="copy_btn">
+            <div class="pgm_num">
+                Program 1 <p onclick="closeProgram()">X</p>
+
+            </div>
+
+            <div class="copy_icon" onclick="copyProgram('codeArea', 'copied1')">
+                <i class="far fa-copy"></i>
+                <div class="copied" id="copied1"></div>
+            </div>
+        </div>
+        <textarea class="text_area" id="codeArea" rows="5">
+      prpgram 1
+          </textarea>
+
+    </div>
+
+
+    <!-- program 2  -->
+    <div id="program_container2" class="textarea_container" style="display: none;">
+
+        <div class="line_numbers">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+            <p>11</p>
+            <p>12</p>
+            <p>13</p>
+            <p>14</p>
+            <p>15</p>
+            <p>16</p>
+            <p>17</p>
+            <p>18</p>
+            <p>19</p>
+            <p>20</p>
+            <p>21</p>
+            <p>22</p>
+
+        </div>
+        <div class="copy_btn">
+            <div class="pgm_num">
+                Program 2 <p onclick="closeProgram()">X</p>
+
+            </div>
+
+            <div class="copy_icon" onclick="copyProgram('program2', 'copied2')">
+                <i class="far fa-copy"></i>
+                <div class="copied" id="copied2"></div>
+            </div>
+        </div>
+        <textarea class="text_area" id="program2" rows="5">
+     program 2
+          </textarea>
+
+    </div>
+
+    <!-- program 3  -->
+
+    <div id="program_container3" class="textarea_container" style="display: none;">
+
+        <div class="line_numbers">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+            <p>11</p>
+            <p>12</p>
+            <p>13</p>
+            <p>14</p>
+            <p>15</p>
+            <p>16</p>
+            <p>17</p>
+            <p>18</p>
+            <p>19</p>
+            <p>20</p>
+            <p>21</p>
+            <p>22</p>
+
+        </div>
+        <div class="copy_btn">
+            <div class="pgm_num">
+                Program 3 <p onclick="closeProgram()">X</p>
+
+            </div>
+
+            <div class="copy_icon" onclick="copyProgram('program3', 'copied3')">
+                <i class="far fa-copy"></i>
+                <div class="copied" id="copied3"></div>
+            </div>
+        </div>
+        <textarea class="text_area" id="program3" rows="5">
+     program 3
+          </textarea>
+
+    </div>
+
+    <!-- program 4  -->
+
+    <div id="program_container4" class="textarea_container" style="display: none;">
+
+        <div class="line_numbers">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+            <p>11</p>
+            <p>12</p>
+            <p>13</p>
+            <p>14</p>
+            <p>15</p>
+            <p>16</p>
+            <p>17</p>
+            <p>18</p>
+            <p>19</p>
+            <p>20</p>
+            <p>21</p>
+            <p>22</p>
+
+        </div>
+        <div class="copy_btn">
+            <div class="pgm_num">
+                Program 4 <p onclick="closeProgram()">X</p>
+
+            </div>
+
+            <div class="copy_icon" onclick="copyProgram('program4', 'copied4')">
+                <i class="far fa-copy"></i>
+                <div class="copied" id="copied4"></div>
+            </div>
+        </div>
+        <textarea class="text_area" id="program4" rows="5">
+ program 4
+              </textarea>
+
+    </div>
+
+    <!-- program 5  -->
+
+    <div id="program_container5" class="textarea_container" style="display: none;">
+
+        <div class="line_numbers">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+            <p>11</p>
+            <p>12</p>
+            <p>13</p>
+            <p>14</p>
+            <p>15</p>
+            <p>16</p>
+            <p>17</p>
+            <p>18</p>
+            <p>19</p>
+            <p>20</p>
+            <p>21</p>
+            <p>22</p>
+
+        </div>
+        <div class="copy_btn">
+            <div class="pgm_num">
+                Program 5 <p onclick="closeProgram()">X</p>
+
+            </div>
+
+            <div class="copy_icon" onclick="copyProgram('program5', 'copied5')">
+                <i class="far fa-copy"></i>
+                <div class="copied" id="copied5"></div>
+            </div>
+        </div>
+        <textarea class="text_area" id="program5" rows="5">
+     program 5
+                  </textarea>
+
+    </div>
+
+    <!-- program 6  -->
+
+    <div id="program_container6" class="textarea_container" style="display: none;">
+
+        <div class="line_numbers">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+            <p>11</p>
+            <p>12</p>
+            <p>13</p>
+            <p>14</p>
+            <p>15</p>
+            <p>16</p>
+            <p>17</p>
+            <p>18</p>
+            <p>19</p>
+            <p>20</p>
+            <p>21</p>
+            <p>22</p>
+
+        </div>
+        <div class="copy_btn">
+            <div class="pgm_num">
+                Program 6 <p onclick="closeProgram()">X</p>
+
+            </div>
+
+            <div class="copy_icon" onclick="copyProgram('program6', 'copied6')">
+                <i class="far fa-copy"></i>
+                <div class="copied" id="copied6"></div>
+            </div>
+        </div>
+        <textarea class="text_area" id="program6" rows="5">
+     program 6
+                  </textarea>
+
+    </div>
+
+    <!-- program 7  -->
+
+    <div id="program_container7" class="textarea_container" style="display: none;">
+
+        <div class="line_numbers">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+            <p>11</p>
+            <p>12</p>
+            <p>13</p>
+            <p>14</p>
+            <p>15</p>
+            <p>16</p>
+            <p>17</p>
+            <p>18</p>
+            <p>19</p>
+            <p>20</p>
+            <p>21</p>
+            <p>22</p>
+
+        </div>
+        <div class="copy_btn">
+            <div class="pgm_num">
+                Program 7 <p onclick="closeProgram()">X</p>
+
+            </div>
+
+            <div class="copy_icon" onclick="copyProgram('program7', 'copied7')">
+                <i class="far fa-copy"></i>
+                <div class="copied" id="copied7"></div>
+            </div>
+        </div>
+        <textarea class="text_area" id="program7" rows="5">
+                 program 7
+                              </textarea>
+
+    </div>
+
+    <!-- program 8  -->
+
+    <div id="program_container8" class="textarea_container" style="display: none;">
+
+        <div class="line_numbers">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+            <p>11</p>
+            <p>12</p>
+            <p>13</p>
+            <p>14</p>
+            <p>15</p>
+            <p>16</p>
+            <p>17</p>
+            <p>18</p>
+            <p>19</p>
+            <p>20</p>
+            <p>21</p>
+            <p>22</p>
+
+        </div>
+        <div class="copy_btn">
+            <div class="pgm_num">
+                Program 8 <p onclick="closeProgram()">X</p>
+
+            </div>
+
+            <div class="copy_icon" onclick="copyProgram('program8', 'copied8')">
+                <i class="far fa-copy"></i>
+                <div class="copied" id="copied8"></div>
+            </div>
+        </div>
+        <textarea class="text_area" id="program8" rows="5">
+                             program 8
+                                          </textarea>
+
+    </div>
+    <!-- program 8  -->
+
+    <div id="program_container8" class="textarea_container" style="display: none;">
+
+        <div class="line_numbers">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+            <p>11</p>
+            <p>12</p>
+            <p>13</p>
+            <p>14</p>
+            <p>15</p>
+            <p>16</p>
+            <p>17</p>
+            <p>18</p>
+            <p>19</p>
+            <p>20</p>
+            <p>21</p>
+            <p>22</p>
+
+        </div>
+        <div class="copy_btn">
+            <div class="pgm_num">
+                Program 8 <p onclick="closeProgram()">X</p>
+
+            </div>
+
+            <div class="copy_icon" onclick="copyProgram('program8', 'copied8')">
+                <i class="far fa-copy"></i>
+                <div class="copied" id="copied8"></div>
+            </div>
+        </div>
+        <textarea class="text_area" id="program8" rows="5">
+                                             program 8
+                                                          </textarea>
+
+    </div>
+    <!-- program 9  -->
+
+    <div id="program_container9" class="textarea_container" style="display: none;">
+
+        <div class="line_numbers">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+            <p>11</p>
+            <p>12</p>
+            <p>13</p>
+            <p>14</p>
+            <p>15</p>
+            <p>16</p>
+            <p>17</p>
+            <p>18</p>
+            <p>19</p>
+            <p>20</p>
+            <p>21</p>
+            <p>22</p>
+
+        </div>
+        <div class="copy_btn">
+            <div class="pgm_num">
+                Program 9 <p onclick="closeProgram()">X</p>
+
+            </div>
+
+            <div class="copy_icon" onclick="copyProgram('program9', 'copied9')">
+                <i class="far fa-copy"></i>
+                <div class="copied" id="copied9"></div>
+            </div>
+        </div>
+        <textarea class="text_area" id="program9" rows="5">
+                             program 9
+                                          </textarea>
+
+    </div>
+    <!-- program 10  -->
+
+    <div id="program_container10" class="textarea_container" style="display: none;">
+
+        <div class="line_numbers">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+            <p>11</p>
+            <p>12</p>
+            <p>13</p>
+            <p>14</p>
+            <p>15</p>
+            <p>16</p>
+            <p>17</p>
+            <p>18</p>
+            <p>19</p>
+            <p>20</p>
+            <p>21</p>
+            <p>22</p>
+
+        </div>
+        <div class="copy_btn">
+            <div class="pgm_num">
+                Program 10 <p onclick="closeProgram()">X</p>
+
+            </div>
+
+            <div class="copy_icon" onclick="copyProgram('program10', 'copied10')">
+                <i class="far fa-copy"></i>
+                <div class="copied" id="copied10"></div>
+            </div>
+        </div>
+        <textarea class="text_area" id="program10" rows="5">
+                                                                                     program 10
+                                                                                                  </textarea>
+
+    </div>
+
+
+
+
+    <div class="bottom_footer">
+        <img src="./icons/leftBottom.png" alt="">
+        Azlan | &copy; 2023
+    </div>
+    <script src="./main.js"></script>
+
+
+</body>
+
+</html>
