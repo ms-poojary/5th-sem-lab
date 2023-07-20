@@ -13,6 +13,10 @@
 
 <body>
     <div class="head_portion1">
+        <div class="menu_icon" onclick="openNav()">
+            <i class="fas fa-ellipsis-v"></i>
+
+        </div>
         index.html - vs_code - Visual Studio Code
     </div>
     <div class="head_portion2">
@@ -44,7 +48,7 @@
         </div>
     </div>
 
-    <div class="pgm_number">
+    <div id="pgmList" class="pgm_number">
         <div class="explorer">
             <p>EXPLORER</p>
             <p class="explorer_dots">...</p>
@@ -78,7 +82,7 @@
             </div>
         </div>
 
-        <div class="name_container"></div>
+        <div class="close_icon" onclick="closeNav()"><i class="fas fa-times"></i> <p>Close</p></div>
 
     </div>
 

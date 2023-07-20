@@ -34,3 +34,12 @@ function closeProgram() {
 
   }
 }
+
+
+function openNav(){
+  document.getElementById('pgmList').style.width="60vw"
+}
+
+function closeNav(){
+  document.getElementById('pgmList').style.width="0"
+}

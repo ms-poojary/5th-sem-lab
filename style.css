@@ -295,3 +295,58 @@ body {
     position: absolute;
     right: 30px;
 }
+
+.menu_icon {
+    display: none;
+}
+.close_icon{
+    display: none;
+}
+@media (max-width:768px) {
+    .side_icons {
+        display: none;
+    }
+
+    .pgm_number {
+        width: 60vw;
+        overflow: hidden;
+        z-index: 2;
+        margin: 0;
+        margin-left: -13px;
+        transition: 0.5s;
+    }
+
+    .textarea_container {
+        margin-left: 0;
+        width: 100vw;
+    }
+
+    .head_portion1 {
+        font-size: 12px;
+    }
+
+    .head_portion2 a {
+        font-size: 13px;
+    }
+
+    .menu_icon {
+        display: block;
+        position: absolute;
+        left: 10px;
+        font-size: 15px;
+    }
+    .close_icon{
+        width: 100%;
+        display: block;
+        color: white;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .close_icon i{
+        font-size: 30px;
+
+    }
+.explorer_dots{
+    display: none;
+}
+}
