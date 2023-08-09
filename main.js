@@ -36,10 +36,13 @@ function closeProgram() {
 }
 
 
-function openNav(){
-  document.getElementById('pgmList').style.width="60vw"
+function openNav() {
+  var navWidth = document.getElementById('pgmList');
+
+  if (navWidth.style.width === "60vw") {
+    navWidth.style.width = "0";
+  } else {
+    navWidth.style.width = "60vw";
+  }
 }
 
-function closeNav(){
-  document.getElementById('pgmList').style.width="0"
-}
