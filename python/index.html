@@ -69,16 +69,16 @@
             <div class="sub_heading">
                 <i class='fas fa-chevron-down'></i> PYTHON
             </div>
-            <p onclick="switchProgram('program_container1')"> <img src="../icons/python.png" alt=""> program1.c</p>
-            <p onclick="switchProgram('program_container2')"> <img src="../icons/js.png" alt=""> program2.js</p>
-            <p onclick="switchProgram('program_container3')"> <img src="../icons/java.png" alt=""> program3.java</p>
-            <p onclick="switchProgram('program_container4')"> <img src="../icons/java.png" alt=""> program4.java</p>
-            <p onclick="switchProgram('program_container5')"> <img src="../icons/java.png" alt=""> program5.java</p>
-            <p onclick="switchProgram('program_container6')"> <img src="../icons/java.png" alt=""> program6.java</p>
-            <p onclick="switchProgram('program_container7')"> <img src="../icons/java.png" alt=""> program7.java</p>
-            <p onclick="switchProgram('program_container8')"> <img src="../icons/java.png" alt=""> program8.java</p>
-            <p onclick="switchProgram('program_container9')"> <img src="../icons/java.png" alt=""> program9.java</p>
-            <p onclick="switchProgram('program_container10')"> <img src="../icons/java.png" alt=""> program10.java</p>
+            <p onclick="switchProgram('program_container1')"> <img src="../icons/python.png" alt=""> program1.py</p>
+            <p onclick="switchProgram('program_container2')"> <img src="../icons/python.png" alt=""> program2.py</p>
+            <p onclick="switchProgram('program_container3')"> <img src="../icons/python.png" alt=""> program3.py</p>
+            <p onclick="switchProgram('program_container4')"> <img src="../icons/python.png" alt=""> program4.py</p>
+            <p onclick="switchProgram('program_container5')"> <img src="../icons/python.png" alt=""> program5.py</p>
+            <p onclick="switchProgram('program_container6')"> <img src="../icons/python.png" alt=""> program6.py</p>
+            <p onclick="switchProgram('program_container7')"> <img src="../icons/python.png" alt=""> program7.py</p>
+            <p onclick="switchProgram('program_container8')"> <img src="../icons/python.png" alt=""> program8.py</p>
+            <p onclick="switchProgram('program_container9')"> <img src="../icons/python.png" alt=""> program9.py</p>
+            <p onclick="switchProgram('program_container10')"> <img src="../icons/python.png" alt=""> program10.py</p>
 
         </div>
         <div class="subject_name">
@@ -134,7 +134,57 @@
             </div>
         </div>
         <textarea class="text_area" id="codeArea" rows="5">
-      prpgram 1
+     # program 1
+
+# 1. a.
+m1 = int(input("Enter the marks in the first test: "))
+
+m2 = int(input("Enter the marks in second test: "))
+
+m3 = int(input("Enter the marks in third test: "))
+
+if m1 > m2:
+  if m2 > m3:
+    total = m1 + m2
+  else:
+    total = m1 + m3
+else:
+  if m1 > m3:
+    total = m1 + m2
+  else:
+    total = m2 + m3
+
+Avg = total / 2
+
+print("The average of the best two test marks is: ", Avg)
+
+# 1.b.
+num = int(input("Enter a number:"))
+temp = num
+rev = 0
+
+while num != 0:
+  dig = num % 10
+  rev = rev * 10 + dig
+  num = num // 10
+
+if temp == rev:
+  print("The number is palindrome!")
+else:
+  print("Not a palindrome!")
+
+print("The Occurance of each digit in:", temp)
+
+message = str(temp)
+count = {}
+
+for character in message:
+  count.setdefault(character, 0)
+  count[character] += 1
+
+print(count)
+
+
           </textarea>
 
     </div>
@@ -180,7 +230,60 @@
             </div>
         </div>
         <textarea class="text_area" id="program2" rows="5">
-     program 2
+     # program 2
+
+# 2.a.
+def Fib(n):
+  if n <= 0:
+    print("Incorrect input")
+  elif n == 1:
+    return 0
+  elif n == 2:
+    return 1
+  else:
+    return Fib(n - 1) + Fib(n - 2)
+
+# Driver Program
+n = int(input("Enter the value of n:"))
+print("Fibonacci Series:")
+for i in range(1, n + 1):
+  print(Fib(i))
+
+# 2.b.
+def bintodec(num):
+  value = 0
+  for i in range(len(num)):
+    digit = num.pop()
+    if digit == '1':
+      value = value + pow(2, i)
+  return value
+
+def octal_to_hexadecimal(octc):
+  dec = 0
+  pow = 0
+  while octc > 0:
+    ld = octc % 10
+    dec += ld * (8 ** pow)
+    octc //= 10
+    pow += 1
+
+  hexadec = ''
+  hexa_map = "0123456789ABCDEF"
+  while dec != 0:
+    hexadec = hexa_map[dec % 16] + hexadec
+    dec //= 16
+  return hexadec
+
+b_num = list(input("Input a binary number: "))
+dec = bintodec(b_num)
+print("The decimal value of the number is", dec)
+
+octa = int(input("Input a Octal number: "))
+hexa = octal_to_hexadecimal(octa)
+print("The hexa decimal value of the number is", hexa)
+     
+
+
           </textarea>
 
     </div>
@@ -226,7 +329,62 @@
             </div>
         </div>
         <textarea class="text_area" id="program3" rows="5">
-     program 3
+     # program 3
+
+# 3.a.
+def count_characters(statement):
+  words = statement.split()
+  num_words = len(words)
+  num_digits = 0
+  num_uppercase = 0
+  num_lowercase = 0
+
+  for char in statement:
+    if char.isdigit():
+      num_digits += 1
+    elif char.isupper():
+      num_uppercase += 1
+    elif char.islower():
+      num_lowercase += 1
+
+  return num_words, num_digits, num_uppercase, num_lowercase
+
+
+# Test the function
+input_sentences = input("Enter a sentences: ")
+word_count, digit_count, uppercase_count, lowercase_count = count_characters(input_sentences)
+
+print("Number of words:", word_count)
+print("Number of digits:", digit_count)
+print("Number of uppercase letters:", uppercase_count)
+print("Number of lowercase letters:", lowercase_count)
+
+# 3.b.
+def CompareString(str1, str2):
+  if len(str1) >= len(str2):
+    long = len(str1)
+    short = len(str2)
+  else:
+    long = len(str2)
+    short = len(str1)
+
+  matchCnt = 0
+  for i in range(short):
+    if str1[i] == str2[i]:
+      matchCnt += 1
+
+  return matchCnt / long
+
+
+string1 = input("Enter a String: ")
+string2 = input("Enter another String: ")
+
+similarity = CompareString(string1, string2)
+
+print("Similarity between two given string :", similarity)
+
+
+
           </textarea>
 
     </div>
@@ -272,7 +430,85 @@
             </div>
         </div>
         <textarea class="text_area" id="program4" rows="5">
- program 4
+     # program 4
+
+# 4.a.
+def insertionSort(arr):
+  n = len(arr)
+  if n <= 1:
+    return
+
+  for i in range(1, n):
+    key = arr[i]
+    j = i - 1
+
+    while j >= 0 and key < arr[j]:
+      arr[j + 1] = arr[j]
+      j -= 1
+
+    arr[j + 1] = key
+
+
+def mergeSort(array):
+  if len(array) > 1:
+    r = len(array) // 2
+    L = array[:r]
+    M = array[r:]
+
+    mergeSort(L)
+    mergeSort(M)
+
+    i = j = k = 0
+
+    while i < len(L) and j < len(M):
+      if L[i] < M[j]:
+        array[k] = L[i]
+        i += 1
+      else:
+        array[k] = M[j]
+        j += 1
+      k += 1
+
+    while i < len(L):
+      array[k] = L[i]
+      i += 1
+      k += 1
+
+    while j < len(M):
+      array[k] = M[j]
+      j += 1
+      k += 1
+
+
+arr = []
+
+n = int(input("Enter the size of list"))
+for i in range(n):
+  arr.append(int(input("Enter list elements: ")))
+
+arr1 = arr.copy()
+
+insertionSort(arr)
+print("Sorted List using Insertion Sort: ", arr)
+
+mergeSort(arr1)
+print("Sorted list using Merge Sort: ", arr1)
+
+# 4.b.
+s = input("Enter the Roman Number : ")
+roman_no = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
+integer_no = 0
+
+for i in range(len(s)):
+  if i > 0 and roman_no[s[i]] > roman_no[s[i - 1]]:
+    integer_no += roman_no[s[i]] - 2 * roman_no[s[i - 1]]
+  else:
+    integer_no += roman_no[s[i]]
+
+print("The integer number is:", integer_no)
+
+
+
               </textarea>
 
     </div>
@@ -318,7 +554,87 @@
             </div>
         </div>
         <textarea class="text_area" id="program5" rows="5">
-     program 5
+     # program 5
+
+# 5.a.
+import re
+
+# function without using regular expression
+def isPhoneNumber(text):
+  if len(text) != 12:
+    return False
+
+  for i in range(0, 3):
+    if not text[i].isdigit():
+      return False
+
+  if text[3] != '-':
+    return False
+
+  for i in range(4, 7):
+    if not text[i].isdigit():
+      return False
+
+  if text[7] != '-':
+    return False
+
+  for i in range(8, 12):
+    if not text[i].isdigit():
+      return False
+
+  return True
+
+# Function with regular expression
+def isPhoneRegex(text):
+  phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+  if phoneNumRegex.match(text):
+    return True
+  else:
+    return False
+
+ph_num = input("Enter a phone number : ")
+
+print("Without using Regular Expression")
+if isPhoneNumber(ph_num):
+  print("Valid phone number")
+else:
+  print("Invalid phone number")
+
+print("Using Regular Expression")
+if isPhoneRegex(ph_num):
+  print("Valid phone number")
+else:
+  print("Invalid phone number")
+
+# 5.b.
+import re
+
+# Define the regular expression for phone numbers
+phone_regex = re.compile(r'\+\d{12}')
+email_regex = re.compile(r'[A-Za-z0-9._]+@[A-Za-z0-9]+\.[A-Z|a-z]{2,}')
+
+# Open the file for reading
+with open('example.txt', 'r') as f:
+
+  # Loop through each line in the file
+  for line in f:
+
+    # Search for phone numbers in the line
+    matches = phone_regex.findall(line)
+
+    # Print any matches found
+    for match in matches:
+      print(match)
+
+    # Search for email addresses in the line
+    matches = email_regex.findall(line)
+
+    # Print any matches found
+    for match in matches:
+      print(match)
+
+
+
                   </textarea>
 
     </div>
@@ -364,7 +680,69 @@
             </div>
         </div>
         <textarea class="text_area" id="program6" rows="5">
-     program 6
+     # program 6
+
+# 6.a 
+import os.path
+import sys
+
+fname = input("Enter the filename : ")
+
+if not os.path.isfile(fname):
+  print("File", fname, "doesn't exists")
+  sys.exit(0)
+
+infile = open(fname, "r")
+lineList = infile.readlines()
+
+n = int(input("How many line of the file to display:"))
+
+for i in range(n):
+  print(i + 1, ":", lineList[i])
+
+word = input("Enter a word : ")
+cnt = 0
+
+for line in lineList:
+  cnt += line.count(word)
+
+print("The word", word, "appears", cnt, "times in the file")
+
+# 6.b.
+import os
+import zipfile
+
+def create_zip(folder_path, zip_filename):
+
+  # Ensure the folder_path is a valid directory
+  if not os.path.isdir(folder_path):
+    raise ValueError(f"The specified path '{folder_path}' is not a valid directory.")
+
+  # Ensure the zip_filename ends with '.zip'
+  if not zip_filename.endswith('.zip'):
+    zip_filename += '.zip'
+
+  # Create a ZipFile object to write the ZIP file
+  with zipfile.ZipFile(zip_filename, 'w', zipfile.ZIP_DEFLATED) as zipf:
+    # Walk through all files and subdirectories in the folder
+    for folder_name, subfolders, filenames in os.walk(folder_path):
+      for filename in filenames:
+        file_path = os.path.join(folder_name, filename)
+        # Write each file to the ZIP archive
+        zipf.write(file_path, os.path.relpath(file_path, folder_path))
+
+
+folder_to_zip = input("Enter Folder Name or Path, Ex:/path/to/your/folder ")
+zip_filename = folder_to_zip + '.zip'
+
+try:
+  create_zip(folder_to_zip, zip_filename)
+  print(f"ZIP file '{zip_filename}' created successfully.")
+except Exception as e:
+  print(f"An error occurred: {e}")
+
+
+
                   </textarea>
 
     </div>
@@ -410,7 +788,87 @@
             </div>
         </div>
         <textarea class="text_area" id="program7" rows="5">
-                 program 7
+     # program 7
+
+# 7.a.
+import math
+
+# Base Class Shape
+class Shape:
+  def calculate_area(self):
+    pass
+
+# Derived class Triangle
+class Triangle(Shape):
+  def __init__(self, base, height):
+    self.base = base
+    self.height = height
+
+  def calculate_area(self):
+    return 0.5 * self.base * self.height
+
+# Derived class Circle
+class Circle(Shape):
+  def __init__(self, radius):
+    self.radius = radius
+
+  def calculate_area(self):
+    return math.pi * self.radius * self.radius
+
+# Derived class Rectangle
+class Rectangle(Shape):
+  def __init__(self, length, width):
+    self.length = length
+    self.width = width
+
+  def calculate_area(self):
+    return self.length * self.width
+
+# Creating Object for Derived Class using Constructor
+triangle = Triangle(base=5, height=10)
+circle = Circle(radius=4)
+rectangle = Rectangle(length=7, width=3)
+
+print("Area of the Triangle:", triangle.calculate_area())
+print("Area of the Circle:", circle.calculate_area())
+print("Area of the Rectangle:", rectangle.calculate_area())
+
+# 7.b 
+class Employee:
+  def __init__(self, name, emp_id, department, salary):
+    self.name = name
+    self.emp_id = emp_id
+    self.department = department
+    self.salary = salary
+
+  def update_salary_by_department(self, department, new_salary):
+    if self.department == department:
+      self.salary = new_salary
+
+# Create some employee instances
+employee1 = Employee("John Doe", "E101", "HR", 50000)
+employee2 = Employee("Jane Smith", "E102", "IT", 60000)
+employee3 = Employee("Mike Johnson", "E103", "HR", 55000)
+
+# Print the initial salary details
+print("Initial Salary Details:")
+print(employee1.name, employee1.emp_id, employee1.department, employee1.salary)
+print(employee2.name, employee2.emp_id, employee2.department, employee2.salary)
+print(employee3.name, employee3.emp_id, employee3.department, employee3.salary)
+
+# Update salaries for employees belonging to the HR department
+department_to_update = "HR"
+new_salary_for_hr = 60000
+employee1.update_salary_by_department(department_to_update, new_salary_for_hr)
+employee3.update_salary_by_department(department_to_update, new_salary_for_hr)
+
+# Print the updated salary details
+print("\nUpdated Salary Details:")
+print(employee1.name, employee1.emp_id, employee1.department, employee1.salary)
+print(employee2.name, employee2.emp_id, employee2.department, employee2.salary)
+print(employee3.name, employee3.emp_id, employee3.department, employee3.salary)
+
+
                               </textarea>
 
     </div>
@@ -457,8 +915,41 @@
             </div>
         </div>
         <textarea class="text_area" id="program8" rows="5">
-                                             program 8
-                                                          </textarea>
+     # program 8
+
+# 8.a 
+class Palindrome:
+  def is_palindrome(self, input_value):
+    pass
+
+
+class StringPalindrome(Palindrome):
+  def is_palindrome(self, input_value):
+    input_value = input_value.lower().replace(" ", "")
+    return input_value == input_value[::-1]
+
+
+class IntegerPalindrome(Palindrome):
+  def is_palindrome(self, input_value):
+    return str(input_value) == str(input_value)[::-1]
+
+
+input_string = input("Enter a string: ")
+string_palindrome = StringPalindrome()
+if string_palindrome.is_palindrome(input_string):
+  print("The given string is a palindrome.")
+else:
+  print("The given string is not a palindrome.")
+
+input_number = int(input("Enter an integer: "))
+integer_palindrome = IntegerPalindrome()
+if integer_palindrome.is_palindrome(input_number):
+  print("The given integer is a palindrome.")
+else:
+  print("The given integer is not a palindrome.")
+
+
+  </textarea>
 
     </div>
     <!-- program 9  -->
