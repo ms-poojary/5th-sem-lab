@@ -1,4 +1,22 @@
-function copyProgram(program, button) {
+function copyProgram(programId, copiedId) {
+  const copyText = document.getElementById(programId).querySelector('code');
+  const copiedElement = document.getElementById(copiedId);
+
+  navigator.clipboard.writeText(copyText.textContent)
+    .then(() => {
+      copiedElement.textContent = "Copied!";
+      setTimeout(() => {
+        copiedElement.textContent = "";
+      }, 5000);
+    })
+    .catch(err => {
+      console.error('Failed to copy:', err);
+      alert('Copying failed. Please try again or copy manually.');
+    });
+}
+
+
+function copyProgramTextarea(program, button) {
   console.log("copied");
   var copyText = document.getElementById(program);
   copyText.select(); 
@@ -14,6 +32,8 @@ function copyProgram(program, button) {
   }, 5000); 
 }
 
+
+
 function switchProgram(current_pgm) {
   var containers = document.getElementsByClassName('textarea_container');
   for (var i = 0; i < containers.length; i++) {
@@ -24,6 +44,7 @@ function switchProgram(current_pgm) {
 
   }
 }
+
 
 function closeProgram() {
   var containers = document.getElementsByClassName('textarea_container');
