@@ -254,6 +254,7 @@ body {
     text-align: center;
     color: #6b6b6b;
     font-size: 15px;
+    position: relative;
 }
 
 .line_numbers::before {
@@ -266,7 +267,7 @@ body {
     flex: 1;
     padding: 5px 10px;
     font-family: monospace;
-    resize: none;
+    /* resize: none; */
     overflow: auto;
     outline: none;
     background: #252525;
