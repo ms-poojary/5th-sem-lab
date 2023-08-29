@@ -265,7 +265,7 @@ body {
 }
 
 .line_numbers::before {
-    content: counter(line);
+    /* content: counter(line); */
     counter-increment: line;
 
 }
