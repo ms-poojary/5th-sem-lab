@@ -14,7 +14,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 0px;
     background: #444;
 }
 
@@ -109,6 +109,7 @@ body {
     height: 100vh;
 
 }
+
 
 .explorer {
     color: white;
