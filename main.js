@@ -26,7 +26,6 @@ function switchProgram(current_pgm) {
   }
 }
 
-
 function closeProgram() {
   var containers = document.getElementsByClassName('textarea_container');
   for (var i = 0; i < containers.length; i++) {
