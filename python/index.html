@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../style.css">
     <!-- font awesom icons  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+   <!-- prims theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css">
     <title>Lab Programs</title>
 </head>
 
@@ -128,26 +129,28 @@
 
             </div>
 
-            <div class="copy_icon" onclick="copyProgramTextarea('codeArea', 'copied1')">
+            <div class="copy_icon" onclick="copyProgram('program1', 'copied1')">
                 <i class="far fa-copy"></i>
-                <div class="copied" id="copied1"></div>
+                <div class="copied" id="program1"></div>
             </div>
         </div>
-        <textarea class="text_area" id="codeArea" rows="5">
-     # program 1
+    <div class="text_area" id="codeArea">
+    <pre>
+    <code class="language-python">
+    # program 1
 
 # 1. a.
 m1 = int(input("Enter the marks in the first test: "))
 
 m2 = int(input("Enter the marks in second test: "))
-
+    
 m3 = int(input("Enter the marks in third test: "))
-
+    
 if m1 > m2:
-  if m2 > m3:
-    total = m1 + m2
-  else:
-    total = m1 + m3
+    if m2 > m3:
+      total = m1 + m2
+    else:
+     total = m1 + m3
 else:
   if m1 > m3:
     total = m1 + m2
@@ -184,8 +187,9 @@ for character in message:
 
 print(count)
 
-
-          </textarea>
+    </code>
+    </pre>
+    </div>
 
     </div>
 
@@ -224,13 +228,15 @@ print(count)
 
             </div>
 
-            <div class="copy_icon" onclick="copyProgramTextarea('program2', 'copied2')">
+            <div class="copy_icon" onclick="copyProgram('program2', 'copied2')">
                 <i class="far fa-copy"></i>
                 <div class="copied" id="copied2"></div>
             </div>
         </div>
-        <textarea class="text_area" id="program2" rows="5">
-     # program 2
+    <div class="text_area" id="program2">
+    <pre>
+    <code class="language-python">
+    # program 2
 
 # 2.a.
 def Fib(n):
@@ -281,10 +287,10 @@ print("The decimal value of the number is", dec)
 octa = int(input("Input a Octal number: "))
 hexa = octal_to_hexadecimal(octa)
 print("The hexa decimal value of the number is", hexa)
-     
 
-
-          </textarea>
+    </code>
+    </pre>
+    </div>
 
     </div>
 
@@ -323,13 +329,15 @@ print("The hexa decimal value of the number is", hexa)
 
             </div>
 
-            <div class="copy_icon" onclick="copyProgramTextarea('program3', 'copied3')">
+            <div class="copy_icon" onclick="copyProgram('program3', 'copied3')">
                 <i class="far fa-copy"></i>
                 <div class="copied" id="copied3"></div>
             </div>
         </div>
-        <textarea class="text_area" id="program3" rows="5">
-     # program 3
+        <div class="text_area" id="program3" >
+    <pre>
+    <code class="language-python">
+    # program 3
 
 # 3.a.
 def count_characters(statement):
@@ -383,10 +391,9 @@ similarity = CompareString(string1, string2)
 
 print("Similarity between two given string :", similarity)
 
-
-
-          </textarea>
-
+        </code>
+        </pre>
+        </div> 
     </div>
 
     <!-- program 4  -->
@@ -424,13 +431,15 @@ print("Similarity between two given string :", similarity)
 
             </div>
 
-            <div class="copy_icon" onclick="copyProgramTextarea('program4', 'copied4')">
+            <div class="copy_icon" onclick="copyProgram('program4', 'copied4')">
                 <i class="far fa-copy"></i>
                 <div class="copied" id="copied4"></div>
             </div>
         </div>
-        <textarea class="text_area" id="program4" rows="5">
-     # program 4
+        <div class="text_area" id="program4">
+    <pre>
+    <code class="language-python">
+    # program 4
 
 # 4.a.
 def insertionSort(arr):
@@ -447,7 +456,6 @@ def insertionSort(arr):
       j -= 1
 
     arr[j + 1] = key
-
 
 def mergeSort(array):
   if len(array) > 1:
@@ -507,9 +515,9 @@ for i in range(len(s)):
 
 print("The integer number is:", integer_no)
 
-
-
-              </textarea>
+          </code>
+          </pre>
+          </div> 
 
     </div>
 
@@ -548,13 +556,15 @@ print("The integer number is:", integer_no)
 
             </div>
 
-            <div class="copy_icon" onclick="copyProgramTextarea('program5', 'copied5')">
+            <div class="copy_icon" onclick="copyProgram('program5', 'copied5')">
                 <i class="far fa-copy"></i>
                 <div class="copied" id="copied5"></div>
             </div>
         </div>
-        <textarea class="text_area" id="program5" rows="5">
-     # program 5
+        <div class="text_area" id="program5">
+    <pre>
+    <code class="language-python">
+    # program 5
 
 # 5.a.
 import re
@@ -599,7 +609,6 @@ if isPhoneNumber(ph_num):
   print("Valid phone number")
 else:
   print("Invalid phone number")
-
 print("Using Regular Expression")
 if isPhoneRegex(ph_num):
   print("Valid phone number")
@@ -633,10 +642,9 @@ with open('example.txt', 'r') as f:
     for match in matches:
       print(match)
 
-
-
-                  </textarea>
-
+          </code>
+          </pre>
+        </div >
     </div>
 
     <!-- program 6  -->
@@ -674,13 +682,15 @@ with open('example.txt', 'r') as f:
 
             </div>
 
-            <div class="copy_icon" onclick="copyProgramTextarea('program6', 'copied6')">
+            <div class="copy_icon" onclick="copyProgram('program6', 'copied6')">
                 <i class="far fa-copy"></i>
                 <div class="copied" id="copied6"></div>
             </div>
         </div>
-        <textarea class="text_area" id="program6" rows="5">
-     # program 6
+        <div class="text_area" id="program6" >
+    <pre>
+    <code class="language-python">
+    # program 6
 
 # 6.a 
 import os.path
@@ -741,9 +751,9 @@ try:
 except Exception as e:
   print(f"An error occurred: {e}")
 
-
-
-                  </textarea>
+        </code>
+        </pre>
+        </div>
 
     </div>
 
@@ -782,13 +792,15 @@ except Exception as e:
 
             </div>
 
-            <div class="copy_icon" onclick="copyProgramTextarea('program7', 'copied7')">
+            <div class="copy_icon" onclick="copyProgram('program7', 'copied7')">
                 <i class="far fa-copy"></i>
                 <div class="copied" id="copied7"></div>
             </div>
         </div>
-        <textarea class="text_area" id="program7" rows="5">
-     # program 7
+        <div class="text_area" id="program7"> 
+    <pre>
+    <code class="language-python">
+    # program 7
 
 # 7.a.
 import math
@@ -868,9 +880,10 @@ print(employee1.name, employee1.emp_id, employee1.department, employee1.salary)
 print(employee2.name, employee2.emp_id, employee2.department, employee2.salary)
 print(employee3.name, employee3.emp_id, employee3.department, employee3.salary)
 
-
-                              </textarea>
-
+        </code>
+        </pre>
+        </div>
+          
     </div>
 
   
@@ -909,13 +922,15 @@ print(employee3.name, employee3.emp_id, employee3.department, employee3.salary)
 
             </div>
 
-            <div class="copy_icon" onclick="copyProgramTextarea('program8', 'copied8')">
+            <div class="copy_icon" onclick="copyProgram('program8', 'copied8')">
                 <i class="far fa-copy"></i>
                 <div class="copied" id="copied8"></div>
             </div>
         </div>
-        <textarea class="text_area" id="program8" rows="5">
-     # program 8
+        <div class="text_area" id="program8">
+    <pre>
+    <code class="language-python">
+    # program 8
 
 # 8.a 
 class Palindrome:
@@ -948,8 +963,9 @@ if integer_palindrome.is_palindrome(input_number):
 else:
   print("The given integer is not a palindrome.")
 
-
-  </textarea>
+        </code>
+        </pre>
+        </div> 
 
     </div>
     <!-- program 9  -->
@@ -987,14 +1003,14 @@ else:
 
             </div>
 
-            <div class="copy_icon" onclick="copyProgramTextarea('program9', 'copied9')">
+            <div class="copy_icon" onclick="copyProgram('program9', 'copied9')">
                 <i class="far fa-copy"></i>
                 <div class="copied" id="copied9"></div>
             </div>
         </div>
-        <textarea class="text_area" id="program9" rows="5">
+        <div class="text_area" id="program9" >
                              program 9
-                                          </textarea>
+        </div>
 
     </div>
     <!-- program 10  -->
@@ -1032,15 +1048,14 @@ else:
 
             </div>
 
-            <div class="copy_icon" onclick="copyProgramTextarea('program10', 'copied10')">
+            <div class="copy_icon" onclick="copyProgram('program10', 'copied10')">
                 <i class="far fa-copy"></i>
                 <div class="copied" id="copied10"></div>
             </div>
         </div>
-        <textarea class="text_area" id="program10" rows="5">
-                                                                                     program 10
-                                                                                                  </textarea>
-
+        <div class="text_area" id="program10">
+          program 10
+        </div>
     </div>
 
 
@@ -1051,8 +1066,8 @@ else:
         Azlan | &copy; 2023
     </div>
     <script src="../main.js"></script>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-python.min.js"></script>
 </body>
 
 </html>

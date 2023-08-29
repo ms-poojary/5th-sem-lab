@@ -258,7 +258,7 @@ body {
 }
 
 .line_numbers::before {
-    /* content: counter(line); */
+    content: counter(line);
     counter-increment: line;
 
 }
@@ -267,7 +267,6 @@ body {
     flex: 1;
     padding: 5px 10px;
     font-family: monospace;
-    /* resize: none; */
     overflow: auto;
     outline: none;
     background: #252525;
