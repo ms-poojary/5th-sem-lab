@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
 @import url(https://db.onlinewebfonts.com/c/71b00e98168f1a2da1b6c5748587e433?family=Segoe+UI+Mono+W10+Regular);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
 @font-face {
     font-family: 'vs-code';
@@ -42,6 +43,8 @@ body {
     background: #444;
     position: fixed;
     top: 40px;
+    display: flex;
+    align-items: center;
 }
 
 .head_portion2 a {
@@ -117,8 +120,8 @@ body {
 }
 
 .explorer_dots {
-    font-size: 30px;
-    margin-top: -27px;
+    font-size: 10px;
+    /* margin-top: -27px; */
 }
 
 .vs_code {
@@ -135,23 +138,27 @@ body {
     margin-left: 25px;
     color: white;
     font-size: 14px;
-    font-family: 'vs-code';
-
 }
+
 .sub_head{
     border-bottom: 0.5px solid gray;
     border-top: 0.5px solid gray;
 
-
 }
+
 .sub_head a{
     text-decoration: none;
     color: white;
+
 }
 
 .subject_name p {
     margin-left: 10px;
     cursor: pointer;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    padding: 3px 0;
 }
 
 .subject_name p img {
@@ -266,7 +273,6 @@ body {
 .text_area {
     flex: 1;
     padding: 5px 10px;
-    font-family: monospace;
     /* resize: none; */
     overflow: auto;
     outline: none;
@@ -291,7 +297,7 @@ body {
     bottom: 0;
     z-index: 1;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
     display: flex;
     justify-content: space-between;
     padding-right: 10px;
@@ -306,6 +312,10 @@ body {
     color: white;
     position: absolute;
     right: 30px;
+}
+.footer_credits{
+    color:rgb(58, 160, 255);
+    text-decoration: none;
 }
 
 .menu_icon {

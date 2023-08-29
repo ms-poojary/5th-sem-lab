@@ -32,8 +32,6 @@ function copyProgramTextarea(program, button) {
   }, 5000); 
 }
 
-
-
 function switchProgram(current_pgm) {
   var containers = document.getElementsByClassName('textarea_container');
   for (var i = 0; i < containers.length; i++) {
@@ -44,7 +42,6 @@ function switchProgram(current_pgm) {
 
   }
 }
-
 
 function closeProgram() {
   var containers = document.getElementsByClassName('textarea_container');
