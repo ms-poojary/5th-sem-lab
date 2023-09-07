@@ -85,6 +85,8 @@
       <p onclick="switchProgram('program_container8')"> <img src="../icons/python.png" alt=""> program8.py</p>
       <p onclick="switchProgram('program_container9')"> <img src="../icons/python.png" alt=""> program9.py</p>
       <p onclick="switchProgram('program_container10')"> <img src="../icons/python.png" alt=""> program10.py</p>
+      <p onclick="switchProgram('program_container_b')"> <img src="../icons/python.png" alt=""> part_B.py</p>
+
 
     </div>
     <div class="subject_name">
@@ -1015,7 +1017,103 @@ else:
       </div>
     </div>
     <div class="text_area" id="program9">
-      program 9
+    <pre>
+      <code class="language-python">
+        #program 9
+
+      #9.a
+import requests, os, bs4
+
+url = 'https://xkcd.com/'
+os.makedirs('xkcd', exist_ok=True)
+
+while not url.endswith('#'):
+    print('Downloading page {}...'.format(url))
+    res = requests.get(url)
+    res.raise_for_status()
+    soup = bs4.BeautifulSoup(res.text)
+
+    comicElem = soup.select('#comic img')
+    if comicElem == []:
+        print('Could not find comic image')
+    else:
+        comicUrl = 'http:' + comicElem[0].get('src')
+        print('Downloading image {} ...'.format(comicUrl))
+        res = requests.get(comicUrl)
+        res.raise_for_status()
+        imageFile = open(os.path.join('xkcd', os.path.basename(comicUrl)), 'wb')
+        for chunk in res.iter_content(100000):
+            imageFile.write(chunk)
+        imageFile.close()
+
+    prevLink = soup.select('a[rel="prev"]')[0]
+    url = 'https://xkcd.com' + prevLink.get('href')
+print('Done')
+
+#9.b
+from openpyxl import Workbook
+from openpyxl.styles import Font
+
+wb = Workbook()
+sheet = wb.active
+sheet.title = "Language"
+wb.create_sheet(title="Capital")
+
+lang = ["Kannada", "Telugu", "Tamil"]
+state = ["Karnataka", "Telangana", "Tamil Nadu"]
+capital = ["Bengaluru", "Hyderabad", "Chennai"]
+code = ["KA", "TS", "TN"]
+
+sheet.cell(row=1, column=1).value = "State"
+sheet.cell(row=1, column=2).value = "Language"
+sheet.cell(row=1, column=3).value = "Code"
+
+ft = Font(bold=True)
+for row in sheet["A1:C1"]:
+    for cell in row:
+        cell.font = ft
+
+for i in range(2, 5):
+    sheet.cell(row=i, column=1).value = state[i - 2]
+    sheet.cell(row=i, column=2).value = lang[i - 2]
+    sheet.cell(row=i, column=3).value = code[i - 2]
+
+wb.save("demo.xlsx")
+
+sheet = wb["Capital"]
+sheet.cell(row=1, column=1).value = "State"
+sheet.cell(row=1, column=2).value = "Capital"
+sheet.cell(row=1, column=3).value = "Code"
+
+ft = Font(bold=True)
+for row in sheet["A1:C1"]:
+    for cell in row:
+        cell.font = ft
+
+for i in range(2, 5):
+    sheet.cell(row=i, column=1).value = state[i - 2]
+    sheet.cell(row=i, column=2).value = capital[i - 2]
+    sheet.cell(row=i, column=3).value = code[i - 2]
+
+wb.save("demo.xlsx")
+
+srchCode = input("Enter state code for finding capital ")
+for i in range(2, 5):
+    data = sheet.cell(row=i, column=3).value
+    if data == srchCode:
+        print("Corresponding capital for code", srchCode, "is", sheet.cell(row=i, column=2).value)
+
+sheet = wb["Language"]
+srchCode = input("Enter state code for finding language ")
+for i in range(2, 5):
+    data = sheet.cell(row=i, column=3).value
+    if data == srchCode:
+        print("Corresponding language for code", srchCode, "is", sheet.cell(row=i, column=2).value)
+
+wb.close()
+
+      </code>
+    </pre>
     </div>
 
   </div>
@@ -1060,10 +1158,199 @@ else:
       </div>
     </div>
     <div class="text_area" id="program10">
-      program 10
+      <pre>
+        <code class="language-python">
+        #program 10
+
+#10.a
+from glob import glob
+from PyPDF2 import PdfMerger
+
+def pdf_merge():
+
+    # Create a PDF merger object
+    fileMerger_ = PdfMerger()
+
+    # Get all the PDF files in the specified directory
+    pdfsStored = [filename for filename in glob(r"C:\Users\person\Desktop\pdf files\*.pdf")]
+
+    # Append each PDF file to the merger object
+    [fileMerger_.append(pdf) for pdf in pdfsStored]
+
+    # Open a new PDF file to write the merged PDF to
+    with open(r"C:\Users\person\Desktop\pdf files\Merged_pdfs.pdf", "wb") as new_file:
+        # Write the merged PDF to the new file
+        fileMerger_.write(new_file)
+
+# Call the `pdf_merge()` function
+pdf_merge()
+
+#10.b
+import json
+
+# Load the JSON data from file
+with open('weather_data.json') as f:
+    data = json.load(f)
+
+# Extract the required weather data
+current_temp = data['main']['temp']
+humidity = data['main']['humidity']
+weather_desc = data['weather'][0]['description']
+
+# Display the weather data
+print(f"Current temperature: {current_temp}°C")
+print(f"Humidity: {humidity}%")
+print(f"Weather description: {weather_desc}")
+
+#json file:
+{
+  "coord": {
+  "lon": -73.99,
+  "lat": 40.73
+  },
+  "weather": [
+  {
+  pg. 80 2022-2023 DEPT OF CS ,PACE
+  "id": 800,
+  "main": "Clear",
+  "description": "clear sky",
+  "icon": "01d"
+  }
+  ],
+  "base": "stations",
+  "main": {
+  "temp": 15.45,
+  "feels_like": 12.74,
+  "temp_min": 14.44,
+  "temp_max": 16.11,
+  "pressure": 1017,
+  "humidity": 64
+  },
+  "visibility": 10000,
+  "wind": {
+  "speed": 4.63,
+  "deg": 180
+  },
+  "clouds": {
+  "all": 1
+  },
+  "dt": 1617979985,
+  "sys": {
+  "type": 1,
+  "id": 5141,
+  "country": "US",
+  pg. 81 2022-2023 DEPT OF CS PACE
+  "sunrise": 1617951158,
+  "sunset": 1618000213
+  },
+  "timezone": -14400,
+  "id": 5128581,
+  "name": "New York",
+  "cod": 200
+  }
+
+        </code>
+      </pre>
     </div>
   </div>
 
+
+  <div id="program_container_b" class="textarea_container" style="display: none;">
+
+    <div class="line_numbers">
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>4</p>
+      <p>5</p>
+      <p>6</p>
+      <p>7</p>
+      <p>8</p>
+      <p>9</p>
+      <p>10</p>
+      <p>11</p>
+      <p>12</p>
+      <p>13</p>
+      <p>14</p>
+      <p>15</p>
+      <p>16</p>
+      <p>17</p>
+      <p>18</p>
+      <p>19</p>
+      <p>20</p>
+      <p>21</p>
+      <p>22</p>
+
+    </div>
+    <div class="copy_btn">
+      <div class="pgm_num">
+        Part B <p onclick="closeProgram()">X</p>
+
+      </div>
+
+      <div class="copy_icon" onclick="copyProgram('programb', 'copied10')">
+        <i class="far fa-copy"></i>
+        <div class="copied" id="copied10"></div>
+      </div>
+    </div>
+    <div class="text_area" id="programb">
+      <pre>
+        <code class="language-python">
+          #part B Programs
+
+          #2
+def partition(arr, low, high):
+    i = (low - 1)
+    pivot = arr[high]  # pivot element
+
+    for j in range(low, high):
+        # If current element is smaller
+        if arr[j] <= pivot:
+            # increment
+            i = i + 1
+            arr[i], arr[j] = arr[j], arr[i]
+
+    arr[i + 1], arr[high] = arr[high], arr[i + 1]
+    return (i + 1)
+
+# sort
+def quickSort(arr, low, high):
+    if low < high:
+        # index
+        pi = partition(arr, low, high)
+        # sort the partitions
+        quickSort(arr, low, pi - 1)
+        quickSort(arr, pi + 1, high)
+
+# main
+arr = [2, 5, 3, 8, 6, 5, 4, 7]
+n = len(arr)
+quickSort(arr, 0, n - 1)
+print("Sorted array is:")
+for i in range(n):
+    print(arr[i], end=" ")
+
+    #3
+def selectionSort(array, size):
+    for step in range(size):
+        min_idx = step
+        for i in range(step + 1, size):
+            if array[i] < array[min_idx]:
+                min_idx = i
+
+        (array[step], array[min_idx]) = (array[min_idx], array[step])
+
+data = [-2, 45, 0, 11, -9]
+size = len(data)
+selectionSort(data, size)
+print('Sorted Array in Ascending Order:')
+print(data)
+
+
+        </code>
+      </pre>
+    </div>
+  </div>
 
 
 
