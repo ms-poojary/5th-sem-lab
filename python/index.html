@@ -1019,9 +1019,9 @@ else:
     <div class="text_area" id="program9">
     <pre>
       <code class="language-python">
-        #program 9
+  # program 9
 
-      #9.a
+# 9.a
 import requests, os, bs4
 
 url = 'https://xkcd.com/'
@@ -1050,7 +1050,7 @@ while not url.endswith('#'):
     url = 'https://xkcd.com' + prevLink.get('href')
 print('Done')
 
-#9.b
+# 9.b
 from openpyxl import Workbook
 from openpyxl.styles import Font
 
@@ -1160,32 +1160,25 @@ wb.close()
     <div class="text_area" id="program10">
       <pre>
         <code class="language-python">
-        #program 10
+# program 10
 
-#10.a
-from glob import glob
-from PyPDF2 import PdfMerger
+# 10.a
+from PyPDF2 import PdfWriter, PdfReader
+num = int(input("Enter page number you want combine from multiple documents "))
+pdf1 = open('Lab1.pdf', 'rb')
+pdf2 = open('Python Lab 2.pdf', 'rb')
+pdf_writer = PdfWriter()
+pdf1_reader = PdfReader(pdf1)
+page = pdf1_reader.pages[num-1]
+pdf_writer.add_page(page)
+pdf2_reader = PdfReader(pdf2)
+page = pdf2_reader.pages[num-1]
+pdf_writer.add_page(page)
+with open('output.pdf', 'wb') as output:
+    pdf_writer.write(output)
 
-def pdf_merge():
 
-    # Create a PDF merger object
-    fileMerger_ = PdfMerger()
-
-    # Get all the PDF files in the specified directory
-    pdfsStored = [filename for filename in glob(r"C:\Users\person\Desktop\pdf files\*.pdf")]
-
-    # Append each PDF file to the merger object
-    [fileMerger_.append(pdf) for pdf in pdfsStored]
-
-    # Open a new PDF file to write the merged PDF to
-    with open(r"C:\Users\person\Desktop\pdf files\Merged_pdfs.pdf", "wb") as new_file:
-        # Write the merged PDF to the new file
-        fileMerger_.write(new_file)
-
-# Call the `pdf_merge()` function
-pdf_merge()
-
-#10.b
+# 10.b
 import json
 
 # Load the JSON data from file
@@ -1210,7 +1203,6 @@ print(f"Weather description: {weather_desc}")
   },
   "weather": [
   {
-  pg. 80 2022-2023 DEPT OF CS ,PACE
   "id": 800,
   "main": "Clear",
   "description": "clear sky",
@@ -1239,7 +1231,6 @@ print(f"Weather description: {weather_desc}")
   "type": 1,
   "id": 5141,
   "country": "US",
-  pg. 81 2022-2023 DEPT OF CS PACE
   "sunrise": 1617951158,
   "sunset": 1618000213
   },
@@ -1296,9 +1287,80 @@ print(f"Weather description: {weather_desc}")
     <div class="text_area" id="programb">
       <pre>
         <code class="language-python">
-          #part B Programs
+# part B Programs
 
-          #2
+# 1
+def merge(arr, l, m, r):
+   
+
+    # Create two temporary arrays to store the two subarrays.
+    n1 = m - l + 1
+    n2 = r - m
+    L = [0] * (n1)
+    R = [0] * (n2)
+
+    # Copy the two subarrays into the temporary arrays.
+    for i in range(0, n1):
+        L[i] = arr[l + i]
+    for j in range(0, n2):
+        R[j] = arr[m + 1 + j]
+
+    # Merge the two sorted subarrays back into arr.
+    i = 0
+    j = 0
+    k = l
+    while i < n1 and j < n2:
+        if L[i] <= R[j]:
+            arr[k] = L[i]
+            i += 1
+        else:
+            arr[k] = R[j]
+            j += 1
+        k += 1
+
+    # Copy the remaining elements of L[] into arr[].
+    while i < n1:
+        arr[k] = L[i]
+        i += 1
+        k += 1
+
+    # Copy the remaining elements of R[] into arr[].
+    while j < n2:
+        arr[k] = R[j]
+        j += 1
+        k += 1
+
+
+def mergeSort(arr, l, r):
+   
+    if l < r:
+        # Divide the array into two halves.
+        m = l+(r-l)//2
+
+        # Sort the two halves.
+        mergeSort(arr, l, m)
+        mergeSort(arr, m+1, r)
+
+        # Merge the two sorted halves.
+        merge(arr, l, m, r)
+
+
+# Main function
+arr = [12, 11, 13, 5, 6, 7]
+n = len(arr)
+
+print("Given array is")
+for i in range(n):
+    print("%d" % arr[i],end=" ")
+
+mergeSort(arr, 0, n-1)
+
+print("\n\nSorted array is")
+for i in range(n):
+     print("%d" % arr[i],end=" ")
+
+
+# 2
 def partition(arr, low, high):
     i = (low - 1)
     pivot = arr[high]  # pivot element
@@ -1330,7 +1392,9 @@ print("Sorted array is:")
 for i in range(n):
     print(arr[i], end=" ")
 
-    #3
+
+  
+# 3
 def selectionSort(array, size):
     for step in range(size):
         min_idx = step
