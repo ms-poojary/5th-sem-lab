@@ -1,3 +1,12 @@
+  var htmlCodeElements = document.getElementsByClassName("language-html");
+
+  for (var i = 0; i < htmlCodeElements.length; i++) {
+    var htmlCode = htmlCodeElements[i].innerHTML;
+    htmlCode = htmlCode.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    htmlCodeElements[i].innerHTML = htmlCode;
+  }
+
+
 function copyProgram(programId, copiedId) {
   const copyText = document.getElementById(programId).querySelector('code');
   const copiedElement = document.getElementById(copiedId);
