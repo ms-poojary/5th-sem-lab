@@ -1,4 +1,4 @@
-  var htmlCodeElements = document.getElementsByClassName("language-html");
+  var htmlCodeElements = document.getElementsByClassName("language-markup");
 
   for (var i = 0; i < htmlCodeElements.length; i++) {
     var htmlCode = htmlCodeElements[i].innerHTML;
