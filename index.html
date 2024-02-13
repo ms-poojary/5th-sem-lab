@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Copyrights @ https://github.com/azlanajju/lab  -->
-<!-- Author : Azlan  -->
+  <!-- Copyrights @ https://github.com/azlanajju/lab  -->
+  <!-- Author : Azlan  -->
 
-<head>
+  <head>
     <link rel="icon" type="image/x-icon" href="/error/lab.ico">
-
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,612 +14,1012 @@
     <!-- prism themes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css">
     <!-- google fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans:regular,bold,italic,thin,light,bolditalic,black,blackitalic,thinitalic,lightitalic,medium,mediumitalic" />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans:regular,bold,italic,thin,light,bolditalic,black,blackitalic,thinitalic,lightitalic,medium,mediumitalic">
 
     <title>Lab Programs</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="head_portion1">
-        <div class="menu_icon" onclick="openNav()">
-            <i class="fas fa-ellipsis-v"></i>
-
-        </div>
-        Program.java - Node JS - Visual Studio Code
+      <div class="menu_icon" onclick="openNav()">
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+      Program.html - Angular JS - Visual Studio Code
     </div>
     <div class="head_portion2">
-        <a href="https://3rdsemlab.netlify.app/">Sem3</a>
-        <a href="" class="sem_active">Sem4</a>
-        <a href="https://5th-semlab.netlify.app/">Sem5</a>
-        <a href="https://6thsem-lab.netlify.app/">Sem6</a>
-        <a href="https://labprograms.netlify.app">Sem7</a>
-        <a href="">Sem8</a>
-
+      <a href="https://3rdsemlab.netlify.app/">Sem3</a>
+      <a href="https://4thsem-lab.netlify.app/">Sem4</a>
+      <a href="" class="sem_active">Sem5</a>
+      <a href="https://6thsem-lab.netlify.app/">Sem6</a>
+      <a href="https://labprograms.netlify.app">Sem7</a>
+      <a href="">Sem8</a>
     </div>
 
     <div class="side_icons">
-        <div class="side_icon_img active_icon">
-            <img src="./icons/copy.png" alt="">
-        </div>
-        <div class="side_icon_img">
-            <img src="./icons/search.png" alt="">
-        </div>
+      <div class="side_icon_img active_icon">
+        <img src="./icons/copy.png" alt="">
+      </div>
+      <div class="side_icon_img">
+        <img src="./icons/search.png" alt="">
+      </div>
 
-        <div class="side_icon_img">
-            <img src="./icons/gitcontrol.png" alt="">
-        </div>
-        <div class="side_icon_img">
-            <img src="./icons/debug.png" alt="">
-        </div>
-        <div class="side_icon_img">
-            <img src="./icons/extension.png" alt="">
-        </div>
+      <div class="side_icon_img">
+        <img src="./icons/gitcontrol.png" alt="">
+      </div>
+      <div class="side_icon_img">
+        <img src="./icons/debug.png" alt="">
+      </div>
+      <div class="side_icon_img">
+        <img src="./icons/extension.png" alt="">
+      </div>
     </div>
 
     <div id="pgmList" class="pgm_number">
-        <div class="explorer">
-            <p>EXPLORER</p>
-            <p class="explorer_dots">...</p>
+      <div class="explorer">
+        <p>EXPLORER</p>
+        <p class="explorer_dots">...</p>
+      </div>
+      <div class="vs_code"><i class="fas fa-chevron-down"></i> VS_CODE</div>
+
+      <div class="subject_name">
+        <div class="sub_heading">
+          <i class="fas fa-chevron-down"></i> ANGULAR JS
         </div>
-        <div class="vs_code">
-            <i class='fas fa-chevron-down'></i> VS_CODE
+        <p onclick="switchProgram('program_container1')">
+          <img src="./icons/html.png" alt=""> program1.html
+        </p>
+        <p onclick="switchProgram('program_container2')">
+          <img src="./icons/html.png" alt=""> program2.html
+        </p>
+        <p onclick="switchProgram('program_container3')">
+          <img src="./icons/html.png" alt=""> program3.html
+        </p>
+        <p onclick="switchProgram('program_container4')">
+          <img src="./icons/html.png" alt=""> program4.html
+        </p>
+        <p onclick="switchProgram('program_container5')">
+          <img src="./icons/html.png" alt=""> program5.html
+        </p>
+        <p onclick="switchProgram('program_container6')">
+          <img src="./icons/html.png" alt=""> program6.html
+        </p>
+        <p onclick="switchProgram('program_container7')">
+          <img src="./icons/html.png" alt=""> program7.html
+        </p>
+        <p onclick="switchProgram('program_container8')">
+          <img src="./icons/html.png" alt=""> program8.html
+        </p>
+        <p onclick="switchProgram('program_container9')">
+          <img src="./icons/html.png" alt=""> program9.html
+        </p>
+        <p onclick="switchProgram('program_container10')">
+          <img src="./icons/html.png" alt=""> program10.html
+        </p>
+      </div>
 
-
+      <div class="subject_name">
+        <div class="sub_head">
+          <a href="404.html"> <i class="fas fa-chevron-right"></i> DBMS </a>
         </div>
-
-        <div class="subject_name">
-            <div class="sub_heading">
-                <i class='fas fa-chevron-down'></i> Node JS
-            </div>
-            <p onclick="switchProgram('program_container1')"> <img src="./icons/js.png" alt=""> program1.java</p>
-            <p onclick="switchProgram('program_container2')"> <img src="./icons/js.png" alt=""> program2.java</p>
-            <p onclick="switchProgram('program_container3')"> <img src="./icons/js.png" alt=""> program3.java</p>
-            <p onclick="switchProgram('program_container4')"> <img src="./icons/js.png" alt=""> program4.java</p>
-            <p onclick="switchProgram('program_container5')"> <img src="./icons/js.png" alt=""> program5.java</p>
-            <p onclick="switchProgram('program_container6')"> <img src="./icons/js.png" alt=""> program6.java</p>
-            <p onclick="switchProgram('program_container7')"> <img src="./icons/js.png" alt=""> program7.java</p>
-            <p onclick="switchProgram('program_container8')"> <img src="./icons/js.png" alt=""> program8.java</p>
-            <p onclick="switchProgram('program_container9')"> <img src="./icons/js.png" alt=""> program9.java</p>
-            <p onclick="switchProgram('program_container10')"> <img src="./icons/js.png" alt=""> program10.java</p>
+      </div>
+      <div class="subject_name">
+        <div class="sub_head">
+          <a href="404.html"> <i class="fas fa-chevron-right"></i> CN </a>
         </div>
-
-        <div class="subject_name">
-            <div class="sub_head">
-                <a href="./python/index.html">
-                    <i class='fas fa-chevron-right'></i> DBMS </a>
-
-            </div>
-        </div>
-        <div class="subject_name">
-            <div class="sub_head">
-                <a href="./mces/index.html">
-
-                    <i class='fas fa-chevron-right'></i> CN </a>
-
-            </div>
-        </div>
+      </div>
     </div>
-
 
     <!-- program section  -->
     <!-- program 1  -->
     <div id="program_container1" class="textarea_container">
-
-        <div class="line_numbers">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
-            <p>6</p>
-            <p>7</p>
-            <p>8</p>
-            <p>9</p>
-            <p>10</p>
-            <p>11</p>
-            <p>12</p>
-            <p>13</p>
-            <p>14</p>
-            <p>15</p>
-            <p>16</p>
-            <p>17</p>
-            <p>18</p>
-            <p>19</p>
-            <p>20</p>
-            <p>21</p>
-            <p>22</p>
-
-        </div>
-        <div class="copy_btn">
-            <div class="pgm_num">
-                Program 1 <p onclick="closeProgram()">X</p>
-
-            </div>
-
-            <div class="copy_icon" onclick="copyProgram('program1', 'copied1')">
-                <i class="far fa-copy"></i>
-                <div class="copied" id="copied1"></div>
-            </div>
+      <div class="line_numbers">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+        <p>11</p>
+        <p>12</p>
+        <p>13</p>
+        <p>14</p>
+        <p>15</p>
+        <p>16</p>
+        <p>17</p>
+        <p>18</p>
+        <p>19</p>
+        <p>20</p>
+        <p>21</p>
+        <p>22</p>
+      </div>
+      <div class="copy_btn">
+        <div class="pgm_num">
+          Program 1
+          <p onclick="closeProgram()">X</p>
         </div>
 
-
-        <div class="text_area" id="program1">
-            <pre>
-    <code class="language-html">
-    <h1>hello world</h1>
+        <div class="copy_icon" onclick="copyProgram('program1', 'copied1')">
+          <i class="far fa-copy"></i>
+          <div class="copied" id="copied1"></div>
+        </div>
+      </div>
+      <div class="text_area" id="program1">
+    <pre><code class="language-markup">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    <title>Full Name Program</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+    </script>
+    &lt;/head&gt;
+    &lt;body&gt;
+    <div ng-app="myApp" ng-controller="myCtrl">
+    <h1>Full Name Program</h1>
+    <input type="text" ng-model="firstName" placeholder="Enter First Name">
+    <input type="text" ng-model="lastName" placeholder="Enter Last Name">
+    <br>
+    Full Name: {{firstName + " " + lastName}}
+    </div>
+    <script>
+    var app = angular.module("myApp", []);
+    app.controller("myCtrl", function($scope) {
+    $scope.firstName = "Rajender";
+    $scope.lastName = "Tilak";
+    });
+    </script>
+     &lt;/body&gt;
+     &lt;/html&gt;
     </code>
     </pre>
-        </div>
+    </div>
     </div>
 
-
     <!-- program 2  -->
-    <div id="program_container2" class="textarea_container" style="display: none;">
-
-        <div class="line_numbers">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
-            <p>6</p>
-            <p>7</p>
-            <p>8</p>
-            <p>9</p>
-            <p>10</p>
-            <p>11</p>
-            <p>12</p>
-            <p>13</p>
-            <p>14</p>
-            <p>15</p>
-            <p>16</p>
-            <p>17</p>
-            <p>18</p>
-            <p>19</p>
-            <p>20</p>
-            <p>21</p>
-            <p>22</p>
-
+    <div  id="program_container2"  class="textarea_container"  style="display: none">
+      <div class="line_numbers">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+        <p>11</p>
+        <p>12</p>
+        <p>13</p>
+        <p>14</p>
+        <p>15</p>
+        <p>16</p>
+        <p>17</p>
+        <p>18</p>
+        <p>19</p>
+        <p>20</p>
+        <p>21</p>
+        <p>22</p>
+      </div>
+      <div class="copy_btn">
+        <div class="pgm_num">
+          Program 2
+          <p onclick="closeProgram()">X</p>
         </div>
-        <div class="copy_btn">
-            <div class="pgm_num">
-                Program 2 <p onclick="closeProgram()">X</p>
 
-            </div>
-
-            <div class="copy_icon" onclick="copyProgram('program2', 'copied2')">
-                <i class="far fa-copy"></i>
-                <div class="copied" id="copied2"></div>
-            </div>
+        <div class="copy_icon" onclick="copyProgram('program2', 'copied2')">
+          <i class="far fa-copy"></i>
+          <div class="copied" id="copied2"></div>
         </div>
-        <div class="text_area" id="program2">
-            <pre>
-    <code class="language-html"> 
-        <h1>hello world</h1>
+      </div>
+      <div class="text_area" id="program2">
+    <pre><code class="language-markup">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    <title>AngularJS Shopping List App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+    </script>
+    &lt;/head&gt;
+    &lt;body&gt;
+    <div ng-app="myApp" ng-controller="myCtrl">
+    <h1>Shopping List App</h1>
+    <ul>
+    <li ng-repeat="item in items">{{item}}</li>
+    </ul>
+    <input type="text" ng-model="newItem" placeholder="Enter New Item">
+    <button ng-click="addItem()">Add Item</button>
+    <button ng-click="removeItem(index)">Remove Item</button>
+    </div>
+    <script>
+    var app = angular.module("myApp", []);
+    app.controller("myCtrl", function($scope) {
+    $scope.items = ["Milk", "Bread", "Eggs"];
+    $scope.addItem = function() {
+    $scope.items.push($scope.newItem);
+    $scope.newItem = "";
+    };
+    $scope.removeItem = function(index) {
+    $scope.items.splice(index, 1);
+    };
+    });
+    </script>
+    &lt;/body&gt;
+    &lt;/html&gt;   
         
 
     </code>
     </pre>
-        </div>
+      </div>
     </div>
 
     <!-- program 3  -->
 
-    <div id="program_container3" class="textarea_container" style="display: none;">
-
-        <div class="line_numbers">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
-            <p>6</p>
-            <p>7</p>
-            <p>8</p>
-            <p>9</p>
-            <p>10</p>
-            <p>11</p>
-            <p>12</p>
-            <p>13</p>
-            <p>14</p>
-            <p>15</p>
-            <p>16</p>
-            <p>17</p>
-            <p>18</p>
-            <p>19</p>
-            <p>20</p>
-            <p>21</p>
-            <p>22</p>
-
+    <div  id="program_container3"  class="textarea_container"  style="display: none">
+      <div class="line_numbers">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+        <p>11</p>
+        <p>12</p>
+        <p>13</p>
+        <p>14</p>
+        <p>15</p>
+        <p>16</p>
+        <p>17</p>
+        <p>18</p>
+        <p>19</p>
+        <p>20</p>
+        <p>21</p>
+        <p>22</p>
+      </div>
+      <div class="copy_btn">
+        <div class="pgm_num">
+          Program 3
+          <p onclick="closeProgram()">X</p>
         </div>
-        <div class="copy_btn">
-            <div class="pgm_num">
-                Program 3 <p onclick="closeProgram()">X</p>
 
-            </div>
-
-            <div class="copy_icon" onclick="copyProgram('program3', 'copied3')">
-                <i class="far fa-copy"></i>
-                <div class="copied" id="copied3"></div>
-            </div>
+        <div class="copy_icon" onclick="copyProgram('program3', 'copied3')">
+          <i class="far fa-copy"></i>
+          <div class="copied" id="copied3"></div>
         </div>
-        <div class="text_area" id="program3">
-            <pre>
-    <code class="language-html" >
-            <h1>hello world</h1>
-
-    
-
+      </div>
+      <div class="text_area" id="program3">
+    <pre><code class="language-markup">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    <title>AngularJS Calculator App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+    </script>
+    &lt;/head&gt;
+    &lt;body&gt;
+    <div ng-app="myApp" ng-controller="myCtrl">
+    <h1>Calculator App</h1>
+    <input type="number" ng-model="num1" placeholder="Enter First Number">
+    <input type="number" ng-model="num2" placeholder="Enter Second Number">
+    <select ng-model="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    </select>
+    <button ng-click="calculate()">Calculate</button>
+    <p>Result: {{result}}</p>
+    </div>
+    <script>
+    var app = angular.module("myApp", []);
+    app.controller("myCtrl", function($scope) {
+    $scope.num1 = 0;
+    $scope.num2 = 0;
+    $scope.operator = "+";
+    $scope.result = 0;
+    $scope.calculate = function() {
+    switch ($scope.operator) {
+    case "+":
+    $scope.result = parseFloat($scope.num1) + parseFloat($scope.num2);
+    break;
+    case "-":
+    $scope.result = $scope.num1 - $scope.num2;
+    break;
+    case "*":
+    $scope.result = $scope.num1 * $scope.num2;
+    break;
+    case "/":
+    $scope.result = $scope.num1 / $scope.num2;
+    break;
+    }
+    };
+    });
+    </script>
+    &lt;/body&gt;
+    &lt;/html&gt;
     </code>
     </pre>
-        </div>
+    </div>
     </div>
 
     <!-- program 4  -->
 
-    <div id="program_container4" class="textarea_container" style="display: none;">
-
-        <div class="line_numbers">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
-            <p>6</p>
-            <p>7</p>
-            <p>8</p>
-            <p>9</p>
-            <p>10</p>
-            <p>11</p>
-            <p>12</p>
-            <p>13</p>
-            <p>14</p>
-            <p>15</p>
-            <p>16</p>
-            <p>17</p>
-            <p>18</p>
-            <p>19</p>
-            <p>20</p>
-            <p>21</p>
-            <p>22</p>
-
+    <div  id="program_container4"  class="textarea_container"  style="display: none">
+      <div class="line_numbers">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+        <p>11</p>
+        <p>12</p>
+        <p>13</p>
+        <p>14</p>
+        <p>15</p>
+        <p>16</p>
+        <p>17</p>
+        <p>18</p>
+        <p>19</p>
+        <p>20</p>
+        <p>21</p>
+        <p>22</p>
+      </div>
+      <div class="copy_btn">
+        <div class="pgm_num">
+          Program 4
+          <p onclick="closeProgram()">X</p>
         </div>
-        <div class="copy_btn">
-            <div class="pgm_num">
-                Program 4 <p onclick="closeProgram()">X</p>
 
-            </div>
-
-            <div class="copy_icon" onclick="copyProgram('program4', 'copied4')">
-                <i class="far fa-copy"></i>
-                <div class="copied" id="copied4"></div>
-            </div>
+        <div class="copy_icon" onclick="copyProgram('program4', 'copied4')">
+          <i class="far fa-copy"></i>
+          <div class="copied" id="copied4"></div>
         </div>
-        <div class="text_area" id="program4">
-            <pre>
-    <code class="language-html">
-        <h1>hello world</h1>
-
+      </div>
+      <div class="text_area" id="program4">
+    <pre><code class="language-markup">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    <title>AngularJS Factorial and Square Calculator App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+    </script>
+    &lt;/head&gt;
+    &lt;body&gt;
+    <div ng-app="myApp" ng-controller="myCtrl">
+    <h1>Factorial and Square Calculator App</h1>
+    <input type="number" ng-model="number" placeholder="Enter a Number">
+    <button ng-click="calculateFactorial()">Calculate Factorial</button>
+    <button ng-click="calculateSquare()">Calculate Square</button>
+    <p>Factorial: {{factorial}}</p>
+    <p>Square: {{square}}</p>
+    </div>
+    <script>
+    var app = angular.module("myApp", []);
+    app.controller("myCtrl", function($scope) {
+    $scope.number = 0;
+    $scope.factorial = 0;
+    $scope.square = 0;
+    $scope.calculateFactorial = function() {
+    var factorial = 1;
+    for (var i = $scope.number; i > 1; i--) {
+    factorial *= i;
+    }
+    $scope.factorial = factorial;
+    };
+    $scope.calculateSquare = function() {
+    $scope.square = $scope.number * $scope.number;
+    };
+    });
+    </script>
+    &lt;/body&gt;
+    &lt;/html&gt;
 
     </code>
     </pre>
-        </div>
+    </div>
     </div>
 
     <!-- program 5  -->
 
-    <div id="program_container5" class="textarea_container" style="display: none;">
-
-        <div class="line_numbers">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
-            <p>6</p>
-            <p>7</p>
-            <p>8</p>
-            <p>9</p>
-            <p>10</p>
-            <p>11</p>
-            <p>12</p>
-            <p>13</p>
-            <p>14</p>
-            <p>15</p>
-            <p>16</p>
-            <p>17</p>
-            <p>18</p>
-            <p>19</p>
-            <p>20</p>
-            <p>21</p>
-            <p>22</p>
-
+    <div
+      id="program_container5" class="textarea_container" style="display: none">
+      <div class="line_numbers">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+        <p>11</p>
+        <p>12</p>
+        <p>13</p>
+        <p>14</p>
+        <p>15</p>
+        <p>16</p>
+        <p>17</p>
+        <p>18</p>
+        <p>19</p>
+        <p>20</p>
+        <p>21</p>
+        <p>22</p>
+      </div>
+      <div class="copy_btn">
+        <div class="pgm_num">
+          Program 5
+          <p onclick="closeProgram()">X</p>
         </div>
-        <div class="copy_btn">
-            <div class="pgm_num">
-                Program 5 <p onclick="closeProgram()">X</p>
 
-            </div>
-
-            <div class="copy_icon" onclick="copyProgram('program5', 'copied5')">
-                <i class="far fa-copy"></i>
-                <div class="copied" id="copied5"></div>
-            </div>
+        <div class="copy_icon" onclick="copyProgram('program5', 'copied5')">
+          <i class="far fa-copy"></i>
+          <div class="copied" id="copied5"></div>
         </div>
-        <div class="text_area" id="program5">
-            <pre>
-    <code class="language-html ">
-        <h1>hello world</h1>
-
+      </div>
+      <div class="text_area" id="program5">
+    <pre><code class="language-markup ">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    <title>Student Details with CGPA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js">
+    </script>
+    &lt;/head&gt;
+    &lt;body ng-app="myApp">
+    <div ng-controller="myController">
+    <h2>Student Details</h2>
+    <p>Total number of students: {{ students.length }}</p>
+    <table border="1">
+    <tr>
+    <th>Name</th>
+    <th>CGPA</th>
+    </tr>
+    <tr ng-repeat="student in students">
+    <td>{{ student.name }}</td>
+    <td>{{ student.cgpa }}</td>
+    </tr>
+    </table>
+    </div>
+    <script>
+    var app = angular.module('myApp', []);
+    app.controller('myController', function ($scope) {
+    // Default student details
+    $scope.students = [
+    { name: 'Akshaya', cgpa: 8.8 },
+    { name: 'Krishna Patel', cgpa: 7.2 },
+    { name: 'Johnson', cgpa: 6.5 },
+    { name: 'Safwan', cgpa: 7.5},
+    { name: 'Zeenath', cgpa: 8.5}
+    ];
+    });
+    </script>
+    &lt;/body&gt;
+    &lt;/html&gt;
     </code>
     </pre>
-        </div>
+    </div>
     </div>
 
     <!-- program 6  -->
 
-    <div id="program_container6" class="textarea_container" style="display: none;">
-
-        <div class="line_numbers">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
-            <p>6</p>
-            <p>7</p>
-            <p>8</p>
-            <p>9</p>
-            <p>10</p>
-            <p>11</p>
-            <p>12</p>
-            <p>13</p>
-            <p>14</p>
-            <p>15</p>
-            <p>16</p>
-            <p>17</p>
-            <p>18</p>
-            <p>19</p>
-            <p>20</p>
-            <p>21</p>
-            <p>22</p>
-
+    <div  id="program_container6"  class="textarea_container"  style="display: none">
+      <div class="line_numbers">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+        <p>11</p>
+        <p>12</p>
+        <p>13</p>
+        <p>14</p>
+        <p>15</p>
+        <p>16</p>
+        <p>17</p>
+        <p>18</p>
+        <p>19</p>
+        <p>20</p>
+        <p>21</p>
+        <p>22</p>
+      </div>
+      <div class="copy_btn">
+        <div class="pgm_num">
+          Program 6
+          <p onclick="closeProgram()">X</p>
         </div>
-        <div class="copy_btn">
-            <div class="pgm_num">
-                Program 6 <p onclick="closeProgram()">X</p>
 
-            </div>
-
-            <div class="copy_icon" onclick="copyProgram('program6', 'copied6')">
-                <i class="far fa-copy"></i>
-                <div class="copied" id="copied6"></div>
-            </div>
+        <div class="copy_icon" onclick="copyProgram('program6', 'copied6')">
+          <i class="far fa-copy"></i>
+          <div class="copied" id="copied6"></div>
         </div>
-        <div class="text_area" id="program6">
-            <pre>
-    <code class="language-html">
-        <h1>hello world</h1>
+      </div>
+      <div class="text_area" id="program6">
+    <pre><code class="language-markup">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    <title>To-Do List Application</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js">
+    </script>
+    &lt;/head&gt;
+    &lt;body ng-app="myApp">
+    <div ng-controller="myController">
+    <h2>To-Do List</h2>
+    <ul>
+    <li ng-repeat="task in tasks">
+    {{ task.name }}
+    <button ng-click="editTask(task)">Edit Task</button>
+    <button ng-click="deleteTask(task)">DeleteTask</button>
+    </li>
+    </ul>
+    <div>
+    <label>New Task: </label>
+    <input type="text" ng-model="newTaskName">
+    <button ng-click="addTask()">Add Task</button>
+    </div>
+    <div ng-show="editingTask">
+    <label>Edit Task: </label>
+    <input type="text" ng-model="editedTaskName">
+    <button ng-click="saveTask()">Save</button>
+    <button ng-click="cancelEdit()">Cancel</button>
+
+    </div>
+    </div>
+    <script>
+    var app = angular.module('myApp', []);
+    app.controller('myController', function ($scope) {
+    // Default tasks
+    $scope.tasks = [
+    { name: 'Attend Class'},
+    { name: 'Complete Assignment'},
+    { name: 'Study for CIE'}
+    ];
+    $scope.newTaskName = ' ';
+    $scope.editingTask = null;
+    $scope.editedTaskName = ' ';
+    $scope.addTask = function () {
+    if ($scope.newTaskName) {
+    $scope.tasks.push({ name: $scope.newTaskName });
+    $scope.newTaskName = ' ';
+    }
+    };
+    $scope.editTask = function (task) {
+    $scope.editingTask = task;
+    $scope.editedTaskName = task.name;
+    };
+    $scope.saveTask = function () {
+    if ($scope.editingTask) {
+    $scope.editingTask.name = $scope.editedTaskName;
+    $scope.cancelEdit();
+    }
+    };
+    $scope.cancelEdit = function () {
+    $scope.editingTask = null;
+    $scope.editedTaskName = '';
+    };
+    $scope.deleteTask = function (task) {
+    var index = $scope.tasks.indexOf(task);
+    if (index !== -1) {
+    $scope.tasks.splice(index, 1);
+    }
+    };
+    });
+    </script>
+
+    &lt;/body&gt;
+    &lt;/html&gt;
 
     </code>
     </pre>
-        </div>
+    </div>
     </div>
 
     <!-- program 7  -->
 
-    <div id="program_container7" class="textarea_container" style="display: none;">
-
-        <div class="line_numbers">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
-            <p>6</p>
-            <p>7</p>
-            <p>8</p>
-            <p>9</p>
-            <p>10</p>
-            <p>11</p>
-            <p>12</p>
-            <p>13</p>
-            <p>14</p>
-            <p>15</p>
-            <p>16</p>
-            <p>17</p>
-            <p>18</p>
-            <p>19</p>
-            <p>20</p>
-            <p>21</p>
-            <p>22</p>
-
+    <div  id="program_container7"  class="textarea_container"  style="display: none">
+      <div class="line_numbers">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+        <p>11</p>
+        <p>12</p>
+        <p>13</p>
+        <p>14</p>
+        <p>15</p>
+        <p>16</p>
+        <p>17</p>
+        <p>18</p>
+        <p>19</p>
+        <p>20</p>
+        <p>21</p>
+        <p>22</p>
+      </div>
+      <div class="copy_btn">
+        <div class="pgm_num">
+          Program 7
+          <p onclick="closeProgram()">X</p>
         </div>
-        <div class="copy_btn">
-            <div class="pgm_num">
-                Program 7 <p onclick="closeProgram()">X</p>
 
-            </div>
-
-            <div class="copy_icon" onclick="copyProgram('program7', 'copied7')">
-                <i class="far fa-copy"></i>
-                <div class="copied" id="copied7"></div>
-            </div>
+        <div class="copy_icon" onclick="copyProgram('program7', 'copied7')">
+          <i class="far fa-copy"></i>
+          <div class="copied" id="copied7"></div>
         </div>
-        <div class="text_area" id="program7">
-            <pre>
-    <code class="language-html">
-        <h1>hello world</h1>
+      </div>
+      <div class="text_area" id="program7">
+    <pre><code class="language-markup">
+    &lt;!DOCTYPE html&gt;
+    &lt;html ng-app="userApp" &gt;
+    &lt;head&gt;
+    <title>AngularJS CRUD Application for Users</title>
+    &lt;/head&gt;
+    &lt;body ng-controller="UserController">
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.8.2/a
+    ngular.min.js"> </script>
+    <h1>User Management</h1>
+    <table border="1">
+    <thead>
+    <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="user in users">
+    <td>{{ user.name }}</td>
+    <td>{{ user.email }}</td>
+    <td>
+    <button ng-click="editUser(user)">Edit</button>
+    <button ng-click="deleteUser(user)">Delete</button>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <hr>
+    <h2>Create User</h2>
+    <input type="text" ng-model="newUser.name" placeholder="Name">
+    <input type="email" ng-model="newUser.email" placeholder="Email">
+    <button ng-click="createUser()">Create</button>
+    <hr>
+    <h2>Edit User</h2>
+    <input type="text" ng-model="editedUser.name" placeholder="Name">
+    <input type="email" ng-model="editedUser.email" placeholder="Email">
+    <button ng-click="updateUser()">Update</button>
+    <script>
+    angular.module('userApp', []) .controller('UserController', function($scope) {
+    $scope.users = [
+    { name: 'abcd', email: 'abcd@gmail.com' },
+    { name: 'trainee', email: 'trainee@yahoo.com' }
+    ];
+    $scope.newUser = {};
+    $scope.createUser = function() {
+    $scope.users.push($scope.newUser);
+    $scope.newUser = {};
+    };
+    $scope.editUser = function(user) {
+    $scope.editedUser = user;
+    };
+    $scope.updateUser = function() {
+    $scope.editedUser = {};
+    };
+    $scope.deleteUser = function(user) {
+    $scope.users.splice($scope.users.indexOf(user), 1);
+    };
+    })
+    </script>
+    &lt;/body&gt;
+    &lt;/html&gt;
 
     </code>
     </pre>
-        </div>
     </div>
-
+    </div>
 
     <!-- program 8  -->
 
-    <div id="program_container8" class="textarea_container" style="display: none;">
-
-        <div class="line_numbers">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
-            <p>6</p>
-            <p>7</p>
-            <p>8</p>
-            <p>9</p>
-            <p>10</p>
-            <p>11</p>
-            <p>12</p>
-            <p>13</p>
-            <p>14</p>
-            <p>15</p>
-            <p>16</p>
-            <p>17</p>
-            <p>18</p>
-            <p>19</p>
-            <p>20</p>
-            <p>21</p>
-            <p>22</p>
-
+    <div  id="program_container8"  class="textarea_container"  style="display: none">
+      <div class="line_numbers">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+        <p>11</p>
+        <p>12</p>
+        <p>13</p>
+        <p>14</p>
+        <p>15</p>
+        <p>16</p>
+        <p>17</p>
+        <p>18</p>
+        <p>19</p>
+        <p>20</p>
+        <p>21</p>
+        <p>22</p>
+      </div>
+      <div class="copy_btn">
+        <div class="pgm_num">
+          Program 8
+          <p onclick="closeProgram()">X</p>
         </div>
-        <div class="copy_btn">
-            <div class="pgm_num">
-                Program 8 <p onclick="closeProgram()">X</p>
 
-            </div>
-
-            <div class="copy_icon" onclick="copyProgram('program8', 'copied8')">
-                <i class="far fa-copy"></i>
-                <div class="copied" id="copied8"></div>
-            </div>
+        <div class="copy_icon" onclick="copyProgram('program8', 'copied8')">
+          <i class="far fa-copy"></i>
+          <div class="copied" id="copied8"></div>
         </div>
-        <div class="text_area" id="program8">
-            <pre>
-                <code class="language-html">
-                    <h1>hello world</h1>
+      </div>
+      <div class="text_area" id="program8">
+    <pre><code class="language-markup">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    <title>Login Form with Validation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js">
+    </script>
+    &lt;/head&gt;
+    &lt;body ng-app="myApp" &gt;
+    <div ng-controller="LoginController">
+    <h2>Login Form</h2>
+    <form name="loginForm" novalidate>
+    <label>Username:</label>
+    <input type="text" ng-model="user.username" name="username" required>
+    <span ng-show="loginForm.username.$error.required &&
+    loginForm.username.$dirty">Username is required.</span>
+    <br>
+    <label>Password:</label>
+    <input type="password" ng-model="user.password" name="password" ng-
+    pattern="/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/" required>
+    <span ng-show="loginForm.password.$error.required &&
+    loginForm.password.$dirty">Password is required.</span>
+    <span ng-show="loginForm.password.$error.pattern && loginForm.password.$dirty">
+    Password must be alphanumeric and at least 8 characters long.
+    </span>
+    <br>
+    <button ng-click="login()" ng-disabled="loginForm.$invalid">Login</button>
+    </form>
+    <div ng-show="isLoggedIn">
+    <p>Login successful! Welcome, {{ user.username }}!</p>
+    </div>
+    </div>
+    
+    <script> 
+    var app = angular.module('myApp', []);
+    app.controller('LoginController', function ($scope) {
+    $scope.user = { username: '', password: '' };
+    $scope.isLoggedIn = false;
+    $scope.login = function (){
+    $scope.isLoggedIn = true;
+    };
+    });
+    </script>
+    &lt;/body&gt;
+    &lt;/html&gt;
             
-                </code>
-                </pre>        </div>
-
+    </code>
+    </pre>
+    </div>
     </div>
     <!-- program 9  -->
 
-    <div id="program_container9" class="textarea_container" style="display: none;">
-
-        <div class="line_numbers">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
-            <p>6</p>
-            <p>7</p>
-            <p>8</p>
-            <p>9</p>
-            <p>10</p>
-            <p>11</p>
-            <p>12</p>
-            <p>13</p>
-            <p>14</p>
-            <p>15</p>
-            <p>16</p>
-            <p>17</p>
-            <p>18</p>
-            <p>19</p>
-            <p>20</p>
-            <p>21</p>
-            <p>22</p>
-
-        </div>
-        <div class="copy_btn">
-            <div class="pgm_num">
-                Program 9 <p onclick="closeProgram()">X</p>
-
-            </div>
-
-            <div class="copy_icon" onclick="copyProgram('program9', 'copied9')">
-                <i class="far fa-copy"></i>
-                <div class="copied" id="copied9"></div>
-            </div>
-        </div>
-        <div class="text_area" id="program9">
-            <pre>
-                <code class="language-html">
-                    <h1>hello world</h1>
-            
-                </code>
-                </pre>
+    <div  id="program_container9"  class="textarea_container"  style="display: none">
+      <div class="line_numbers">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+        <p>11</p>
+        <p>12</p>
+        <p>13</p>
+        <p>14</p>
+        <p>15</p>
+        <p>16</p>
+        <p>17</p>
+        <p>18</p>
+        <p>19</p>
+        <p>20</p>
+        <p>21</p>
+        <p>22</p>
+      </div>
+      <div class="copy_btn">
+        <div class="pgm_num">
+          Program 9
+          <p onclick="closeProgram()">X</p>
         </div>
 
+        <div class="copy_icon" onclick="copyProgram('program9', 'copied9')">
+          <i class="far fa-copy"></i>
+          <div class="copied" id="copied9"></div>
+        </div>
+      </div>
+      <div class="text_area" id="program9">
+    <pre><code class="language-markup">
+    &lt;!DOCTYPE html&gt;
+    &lt;html ng-app &gt;
+    &lt;head&gt;
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+    &lt;/head&gt;
+    &lt;body&gt;
+    <div>
+    <div ng-app="myApp">
+    <div ng-controller="EmployeeController">
+    <h1>Employee List</h1>
+    <input type="text" ng-model="searchName" placeholder="Search by name">
+    <input type="number" ng-model="searchSalary" placeholder="Search by salary">
+    <button ng-click="searchEmployees()">Search</button>
+    <ul>
+    <li ng-repeat="employee in employees">{{employee.name}} - {{employee.salary}}</li>
+    </ul>
     </div>
+    </div>
+    <script >
+    var myApp = angular.module('myApp', []);
+    myApp.controller('EmployeeController', function($scope) {
+    $scope.employees = [
+    { name: 'John Doe', salary: 50000 },
+    { name: 'Jane Doe', salary: 60000 },
+    { name: 'Peter Parker', salary: 70000 },
+    { name: 'Mary Jane Watson', salary: 80000 }
+    ];
+    $scope.searchEmployees = function() {
+    $scope.employees = $scope.employees.filter(function(employee) {
+    21
+    return employee.name.toLowerCase().indexOf($scope.searchName.toLowerCase()) !== -
+    1 && employee.salary >= $scope.searchSalary;
+    });
+    };
+    });
+   </script>
+    &lt;/body&gt;
+    &lt;/html&gt;
+   </code>
+    </pre>
+    </div>
+    </div>
+            
     <!-- program 10  -->
 
-    <div id="program_container10" class="textarea_container" style="display: none;">
-
-        <div class="line_numbers">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
-            <p>6</p>
-            <p>7</p>
-            <p>8</p>
-            <p>9</p>
-            <p>10</p>
-            <p>11</p>
-            <p>12</p>
-            <p>13</p>
-            <p>14</p>
-            <p>15</p>
-            <p>16</p>
-            <p>17</p>
-            <p>18</p>
-            <p>19</p>
-            <p>20</p>
-            <p>21</p>
-            <p>22</p>
-
+    <div  id="program_container10"  class="textarea_container"  style="display: none">
+      <div class="line_numbers">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+        <p>11</p>
+        <p>12</p>
+        <p>13</p>
+        <p>14</p>
+        <p>15</p>
+        <p>16</p>
+        <p>17</p>
+        <p>18</p>
+        <p>19</p>
+        <p>20</p>
+        <p>21</p>
+        <p>22</p>
+      </div>
+      <div class="copy_btn">
+        <div class="pgm_num">
+          Program 10
+          <p onclick="closeProgram()">X</p>
         </div>
-        <div class="copy_btn">
-            <div class="pgm_num">
-                Program 10 <p onclick="closeProgram()">X</p>
 
-            </div>
-
-            <div class="copy_icon" onclick="copyProgram('program10', 'copied10')">
-                <i class="far fa-copy"></i>
-                <div class="copied" id="copied10"></div>
-            </div>
+        <div class="copy_icon" onclick="copyProgram('program10', 'copied10')">
+          <i class="far fa-copy"></i>
+          <div class="copied" id="copied10"></div>
         </div>
-        <div class="text_area" id="program10">
-            <pre>
-                <code class="language-html">
-                    <h1>hello world</h1>
-            
-                </code>
-                </pre>        </div>
-
+      </div>
+      <div class="text_area" id="program10">
+    <pre><code class="language-markup">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    <title>Item Collection Management</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js">
+    </script>
+    &lt;/head&gt;
+    &lt;body ng-app="myApp">
+    <div ng-controller="ItemController">
+    <h2>Item Collection</h2>
+    <p>Total number of items: {{ items.length }}</p>
+    <ul>
+    <li ng-repeat="item in items">
+    {{ item.name }}
+    <button ng-click="removeItem(item)">Remove</button>
+    </li>
+    </ul>
+    <div>
+    <label>New Item: </label>
+    <input type="text" ng-model="newItemName">
+    <button ng-click="addItem()">Add Item</button>
+    </div>
+    </div>
+    <script>
+    var app = angular.module('myApp', []);
+    app.controller('ItemController', function ($scope) {
+    // Default items
+    $scope.items = [
+    { name: 'Apple'},
+    { name: 'Banana'},
+    { name: 'Orange'}
+    ];
+    $scope.newItemName = '';
+    $scope.addItem = function () {
+    if ($scope.newItemName) {
+    $scope.items.push({ name: $scope.newItemName });
+    $scope.newItemName = '';
+    }
+    };
+    $scope.removeItem = function (item) {
+    var index = $scope.items.indexOf(item);
+    if (index !== -1) {
+    $scope.items.splice(index, 1);
+    }
+    };
+    });
+    </script>
+    &lt;/body&gt;
+    &lt;/html&gt;
+       
+    </code>
+    </pre>
+    </div>
     </div>
 
-
-
     <div class="bottom_footer">
-        <img src="./icons/leftBottom.png" alt="">
+      <img src="./icons/leftBottom.png" alt="" />
 
-        <div class="footer_text">Az<a class="footer_credits" href="https://github.com/azlanajju">lan</a> | &copy; 2023 | <small>in collab
-                with </small><a class="footer_credits" href="https://github.com/ms-poojary">Varshini</a>&nbsp;</div>
-
+      <div class="footer_text">
+        Az<a class="footer_credits" href="https://github.com/azlanajju">lan</a>
+        | &copy; 2023 | 
+        &nbsp;
+      </div>
     </div>
     <script src="./main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-java.min.js"></script>
-
-</body>
-
+  </body>
 </html>
