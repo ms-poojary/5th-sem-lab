@@ -1009,6 +1009,185 @@
     </script>
     &lt;/body&gt;
     &lt;/html&gt;
+
+
+
+
+      
+<!-- program 11 -->
+
+
+      <div  id="program_container11"  class="textarea_container"  style="display: none">
+      <div class="line_numbers">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+        <p>11</p>
+        <p>12</p>
+        <p>13</p>
+        <p>14</p>
+        <p>15</p>
+        <p>16</p>
+        <p>17</p>
+        <p>18</p>
+        <p>19</p>
+        <p>20</p>
+        <p>21</p>
+        <p>22</p>
+      </div>
+      <div class="copy_btn">
+        <div class="pgm_num">
+          Program 11
+          <p onclick="closeProgram()">X</p>
+        </div>
+
+        <div class="copy_icon" onclick="copyProgram('program11', 'copied11')">
+          <i class="far fa-copy"></i>
+          <div class="copied" id="copied11"></div>
+        </div>
+      </div>
+      <div class="text_area" id="program11">
+    <pre><code class="language-markup">
+
+      
+ &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    <title>Student Details</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js">
+    </script>
+    &lt;/head&gt;
+    &lt;body ng-app="myApp" &gt;
+    <h1>Student Details</h1>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>CGPA</th>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="student in students">
+<td>{{student.name | uppercase}}</td>
+<td>{{student.cgpa}}</td>
+</tr>
+</tbody>
+</table>
+<script>
+angular.module('myApp', []).controller('appCtrl', function($scope) {
+$scope.students = [
+{ name: "John Doe", cgpa: 3.8 },
+{ name: "Jane Doe", cgpa: 3.6 },
+{ name: "Peter Parker", cgpa: 3.9 },
+{ name: "Mary Jane Watson", cgpa: 3.7 }
+];
+});
+</script>
+
+ &lt;/body&gt;
+    &lt;/html&gt;
+
+
+
+      <!-- program 12 -->
+
+
+      <div  id="program_container12"  class="textarea_container"  style="display: none">
+      <div class="line_numbers">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10</p>
+        <p>11</p>
+        <p>12</p>
+        <p>13</p>
+        <p>14</p>
+        <p>15</p>
+        <p>16</p>
+        <p>17</p>
+        <p>18</p>
+        <p>19</p>
+        <p>20</p>
+        <p>21</p>
+        <p>22</p>
+      </div>
+      <div class="copy_btn">
+        <div class="pgm_num">
+          Program 12
+          <p onclick="closeProgram()">X</p>
+        </div>
+
+        <div class="copy_icon" onclick="copyProgram('program12', 'copied12')">
+          <i class="far fa-copy"></i>
+          <div class="copied" id="copied12"></div>
+        </div>
+      </div>
+      <div class="text_area" id="program12">
+    <pre><code class="language-markup">
+
+      
+       &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+       <title>AMJULAR JS DATE UPDATE</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js">
+    </script>
+      &lt;/head&gt;
+    &lt;body ng-app="myApp" &gt
+      <div ng-controller="myController">
+<h2>Date Display</h2>
+<label>Date Format:
+<select ng-model="selectedFormat" ng-change="updateDate()">
+<option value="fullDate">Full Date</option>
+<option value="shortDate">Short Date</option>
+<option value="mediumTime">Medium Time</option>
+<option value="shortTime">short Time</option>
+<option value="yyyy-MM-dd HH:mm:ss">Custom Format (yyyy-MM-dd
+HH:mm:ss)</option>
+</select>
+</label>
+<p>Selected Date Format: {{ selectedFormat }}</p>
+<p>Formatted Date: {{ formattedDate }}</p>
+</div>
+      <script>
+
+        var app = angular.module('myApp', []);
+app.controller('myController', function ($scope, $filter) {
+$scope.selectedFormat = 'fullDate'; // Default date format
+$scope.updateDate = function () {
+var currentDate = new Date();
+$scope.formattedDate = $filter('date')(currentDate, $scope.selectedFormat);
+};
+// Initial date update
+$scope.updateDate();
+});
+      </script>
+       &lt;/body&gt;
+    &lt;/html&gt;
+      
+      
+
+
+
+
+
+
+
+
+      
        
     </code>
     </pre>
